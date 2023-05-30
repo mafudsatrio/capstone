@@ -29,7 +29,15 @@
 	.hamburger {
 	  display: none;
 	}
+}
+
+@media screen and (min-width: 800px) {
+  .sub_layanan{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
   }
+}
 
 @media screen and (max-width: 999px){
 	.image_hero {

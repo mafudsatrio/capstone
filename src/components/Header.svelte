@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '/src/images/logo.png';
+	import logo from '../public/logo/logo.png';
 </script>
 
 <header>
@@ -19,17 +19,13 @@
 		aria-current={$page.url.pathname === '/bank-sampah' ? 'page' : undefined} 
 		href="/bank-sampah">
 		Bank Sampah</a></li>
-	  <li class="nav__item"><a class="nav-link {$page.url.pathname === '/about' ? 'active' : ''}" 
-		aria-current={$page.url.pathname === '/about' ? 'page' : undefined} 
-		href="/about">
-		About</a></li>
-	  <li class="nav__item"><a class="nav-link {$page.url.pathname === '/' ? 'active' : ''}" 
-		aria-current={$page.url.pathname === '/' ? 'page' : undefined} 
-		href="/">
+	  <li class="nav__item"><a class="nav-link {$page.url.pathname === '/daur-ulang' ? 'active' : ''}" 
+		aria-current={$page.url.pathname === '/daur-ulang' ? 'page' : undefined} 
+		href="/daur-ulang">
+		Daur Ulang</a></li>
+	  <li class="nav__item"><a class="nav-link {$page.url.pathname === '/tentang' ? 'active' : ''}" 
+		aria-current={$page.url.pathname === '/tentang' ? 'page' : undefined} 
+		href="/tentang">
 		Tentang</a></li>
-	  <li class="nav__item"><a class="nav-link {$page.url.pathname === '/' ? 'active' : ''}" 
-		aria-current={$page.url.pathname === '/' ? 'page' : undefined} 
-		href="/">
-		Kontak</a></li>
 	</ul>
   </nav>

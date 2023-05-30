@@ -2,10 +2,14 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -99,7 +103,7 @@ main {
   font-size: 15px;
   display: inline-block;
 }
-nav ul li a:hover {
+.nav__item:hover {
   color: #ffffff;
   transition: 0.5s;
   background-color: #395220;
@@ -193,7 +197,8 @@ nav ul li a:hover {
   padding-top: 10px;
   padding-left: 100px;
   padding-right: 100px;
-  max-width: 1440px;
+  padding-bottom: 50px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -246,17 +251,18 @@ nav ul li a:hover {
   width: 100%;
   max-width: 1440px;
   padding: 10px;
-  height: 250px;
-  gap: 50px;
-  padding-right: 50px;
-  margin-right: 50px;
   margin-bottom: 100px;
-  margin: auto;
 }
 
-.sub_layanan .image_layanan {
+.sub_layanan {
+  margin-top: 25px;
   border-radius: 5px;
   padding-right: 50px;
+}
+.image_layanan {
+  border-radius: 5px;
+  padding-right: 50px;
+  margin: auto;
 }
 
 .layanan {
@@ -279,14 +285,12 @@ nav ul li a:hover {
 footer {
   background-color: #4c7031;
   color: #fff;
-  padding: 20px 0;
   text-align: center;
+  width: 100%;
 }
 
 .container_footer {
-  margin: 100px auto 0;
-  padding: 0 20px;
-  height: au;
+  width: 100%;
 }
 
 .footer-content {
@@ -309,7 +313,6 @@ footer {
 
 .footer-links {
   list-style: none;
-  margin: -100px;
 }
 
 .footer-links li {
