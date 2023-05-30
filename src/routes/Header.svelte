@@ -28,6 +28,14 @@
 							About
 						</a>
 			  		</li>
+					  <li class="nav-item">
+						<a 
+							class="nav-link {$page.url.pathname === '/about' ? 'active' : ''}" 
+							aria-current={$page.url.pathname === '/about' ? 'page' : undefined} 
+							href="/about">
+							Bank Sampah
+						</a>
+			  		</li>
 			  		<li class="nav-item">
 						<a 
 							class="nav-link {$page.url.pathname === '/ggwps' ? 'active' : ''}" 
