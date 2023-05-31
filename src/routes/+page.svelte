@@ -1,6 +1,6 @@
 <script>
-	import image_hero from '../public/images/amico.png'
-	import contentImage from '../public/images/bank_sampah.jpeg'
+	import hero from '/src/public/images/amico.png'
+	import contentImage from '/src/public/images/bank_sampah.jpeg'
 </script>
 
 <svelte:head>
@@ -17,7 +17,7 @@
       </div>
       <button class="exchange_button">Tukarkan Sampah</button>
     </div>
-    <img class ="image_hero" src={image_hero} alt="Hero Image" />
+    <img class ="image_hero" src={hero} alt="gambar hero" />
   </div>
   <div class="deskripsi_container">
     <div class="nama">
@@ -38,7 +38,7 @@
     </div>
     <div class="sub_layanan">
       <div class="layanan">
-        <img class="image_layanan" src={ contentImage } alt="Layanan Image 1" />
+        <img class="image_layanan" src={ contentImage } alt="Layanan 1" />
         <div class="layanan_title">
           <h1>Bank Sampah</h1>
         </div>
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="=layanan">
-        <img class="image_layanan" src={ contentImage } alt="Layanan Image 2" />
+        <img class="image_layanan" src={ contentImage } alt="Layanan 2" />
         <div class="layanan_title">
           <h1>Bank Sampah</h1>
         </div>
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="=layanan">
-        <img class="image_layanan" src={ contentImage } alt="Layanan Image 3" />
+        <img class="image_layanan" src={ contentImage } alt="Layanan 3" />
         <div class="layanan_title">
           <h1>Bank Sampah</h1>
         </div>
