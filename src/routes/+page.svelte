@@ -60,7 +60,7 @@
       <div class="=layanan">
         <img class="image_layanan" src={contentImage} alt="Layanan 2" />
         <div class="layanan_title">
-          <h1>Bank Sampah</h1>
+          <h1>Pick Up Sampah</h1>
         </div>
         <div class="deskripsi_layanan">
           <p>

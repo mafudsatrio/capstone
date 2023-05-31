@@ -374,6 +374,20 @@ footer {
 .skip-link:focus {
   top: 0;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #EBEBEB;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 30px;
+}
 
 @media (max-width: 768px) {
   .footer-content,
