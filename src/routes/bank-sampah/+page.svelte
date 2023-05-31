@@ -3,6 +3,7 @@
 </script>
 
 <svelte:head>
+
 	<title>Bank Sampah</title>
 	<meta name="description" content="Bank SAA" />
 </svelte:head>
@@ -28,3 +29,4 @@
 		PLASTIK
 	</h1>
   </div>
+

@@ -8,11 +8,11 @@
 </script>
 
 <div class="app">
-	<Header />
+  <Header />
 
-	<main id="maincontent">
-		<slot />
-	</main>
+  <main id="maincontent">
+    <slot />
+  </main>
 
-	<Footer />
+  <Footer />
 </div>
