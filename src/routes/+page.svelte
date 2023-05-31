@@ -17,6 +17,7 @@
       lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan
       dalam pengelolaan sampah di sekitarmu!
     </div>
+    <button class="exchange_button">Tukarkan Sampah</button>
   </div>
   <img class="image_hero" src={image_hero} alt="Hero" />
 </div>
