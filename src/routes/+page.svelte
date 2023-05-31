@@ -43,19 +43,6 @@
     <h1>Layanan Yang Kami Sediakan</h1>
   </div>
   <div class="sub_layanan">
-    <div class="layanan">
-      <img class="image_layanan" src={contentImage} alt="Layanan 1" />
-      <div class="sub_layanan_title">
-        <h1>Bank Sampah</h1>
-      </div>
-      <div class="deskripsi_layanan">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-          voluptas at? Nulla quis consectetur eveniet architecto
-        </p>
-      </div>
-    </div>
-
     <div class="sub_layanan">
       <div class="layanan">
         <img class="image_layanan" src={contentImage} alt="Layanan 1" />
