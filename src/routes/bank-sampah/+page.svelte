@@ -1,27 +1,32 @@
+<script>
+	import hero from '/src/public/images/amico.png'
+</script>
+
 <svelte:head>
-  <title>About</title>
-  <meta name="description" content="About this app" />
+
+	<title>Bank Sampah</title>
+	<meta name="description" content="Bank SAA" />
 </svelte:head>
 
-<div class="text-column">
-  <h1>About this app</h1>
+<div class="container">
+    <div class="hero_title">
+      <h1>Bantu Pulihkan Bumi dengan Mengelola Sampah bersama Tracycle</h1>
+      <div class="hero_subtitle">
+        Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami
+        siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!
+      </div>
+    </div>
+    <img class ="image_hero" src={hero} alt="Gambar Hero " />
+  </div>
+  <div class="layanan_container">
+    <div class="layanan_title">
+		<h1>Jenis Sampah</h1>
+		<!-- <p>Sampah yang dapat anda tukarkan di Tracycle</p> -->
+   </div>
+  </div>
+  <div class="box_jenis">
+	<h1>
+		PLASTIK
+	</h1>
+  </div>
 
-  <p>
-    This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your
-    own by typing the following into your command line and following the prompts:
-  </p>
-
-  <pre>npm create svelte@latest</pre>
-
-  <p>
-    The page you're looking at is purely static HTML, with no client-side
-    interactivity needed. Because of that, we don't need to load any JavaScript.
-    Try viewing the page's source, or opening the devtools network panel and
-    reloading.
-  </p>
-
-  <p>
-    The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading
-    and form handling. Try using it with JavaScript disabled!
-  </p>
-</div>

@@ -159,7 +159,10 @@ main {
 .hero_title > h1 {
   margin: 0;
 }
-
+.p h1 {
+  margin: 0;
+  position: center;
+}
 .hero_subtitle {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -257,7 +260,15 @@ main {
 }
 
 .layanan {
-  margin-top: 20px;
+
+  align-items: center;e
+}
+
+.layanan_title {
+  font-size: 12px;
+  text-align: center;
+  color: #395220;
+
 }
 
 .deskripsi_layanan {
