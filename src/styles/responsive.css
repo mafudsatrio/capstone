@@ -29,6 +29,7 @@
 	.hamburger {
 	  display: none;
 	}
+
 }
 
 @media screen and (min-width: 800px) {
@@ -36,6 +37,12 @@
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 25px;
+  }
+
+  .footer-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
   }
 }
 
@@ -51,5 +58,9 @@
 		width: 100%;
 		text-align: center;
 	}
+
+  .deskripsi_footer {
+    text-align: center;
+  }
 
 }
