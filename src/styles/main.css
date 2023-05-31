@@ -159,7 +159,10 @@ main {
 .hero_title > h1 {
   margin: 0;
 }
-
+.p h1 {
+  margin: 0;
+  position: center;
+}
 .hero_subtitle {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -233,16 +236,34 @@ main {
   position: relative;
   padding-top: 50px;
   text-align: center;
-  font-size: 10px;
-  color: #395220;
+
+  font-size: 12px;
+}
+.layanan_title p {
+  font-size: 16px;
+  text-align: center;
 }
 
-.layanan_title::after {
+.box_jenis {
+  background-color: #EBEBEB;
+  border-radius : 30px;
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+  position: absolute;
+  width: 312px;
+  height: 170px;
+  left: 186px;
+  top: 825px;
+
+}
+
+.layanan_title::after  {
   content: '';
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 10%;
+  width: 20%;
   height: 4px;
   background-color: #000000;
 }
@@ -268,7 +289,15 @@ main {
 }
 
 .layanan {
-  margin-top: 20px;
+
+  align-items: center;e
+}
+
+.layanan_title {
+  font-size: 12px;
+  text-align: center;
+  color: #395220;
+
 }
 
 .deskripsi_layanan {
