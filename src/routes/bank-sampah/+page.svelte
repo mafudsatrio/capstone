@@ -1,8 +1,9 @@
 <script>
-  import Hero from "../../components/Hero.svelte"
+  import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
   let title = "Tukarkan Sampahmu di Tracycle";
-  let caption = "Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!";
+  let caption =
+    "Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!";
 </script>
 
 <svelte:head>
@@ -10,7 +11,7 @@
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<Hero {title} {caption} {image_hero}/>
+<Hero {title} {caption} {image_hero} />
 
 <div class="deskripsi_container">
   <div class="nama">
@@ -32,25 +33,60 @@
 <div class="layanan_container">
   <div class="grid-container">
     <div class="item1">
-      <img src="/src/static/icons/botol.png" alt="botol" width="100px" height="100px">
-      PLASTIK</div>
+      <img
+        src="/src/static/icons/botol.png"
+        alt="botol"
+        width="100px"
+        height="100px"
+      />
+      PLASTIK
+    </div>
     <div class="item2">
-      <img src="/src/static/icons/kertas.png" alt="kertas" width="100px" height="100px">
-      KERTAS</div>
+      <img
+        src="/src/static/icons/kertas.png"
+        alt="kertas"
+        width="100px"
+        height="100px"
+      />
+      KERTAS
+    </div>
     <div class="item3">
-      <img src="/src/static/icons/botolkaca.png" alt="botol kaca" width="100px" height="100px">
-      BOTOL KACA</div>  
+      <img
+        src="/src/static/icons/botolkaca.png"
+        alt="botol kaca"
+        width="100px"
+        height="100px"
+      />
+      BOTOL KACA
+    </div>
     <div class="item4">
-      <img src="/src/static/icons/besi.png" alt="Besi" width="100px" height="100px">
-      BESI</div>
+      <img
+        src="/src/static/icons/besi.png"
+        alt="Besi"
+        width="100px"
+        height="100px"
+      />
+      BESI
+    </div>
     <div class="item5">
-      <img src="/src/static/icons/gelas.png" alt="Gelas" width="100px" height="100px">
-      GELAS</div>
+      <img
+        src="/src/static/icons/gelas.png"
+        alt="Gelas"
+        width="100px"
+        height="100px"
+      />
+      GELAS
+    </div>
     <div class="item6">
-      <img src="/src/static/icons/kayu.png" alt="Kayu" width="100px" height="100px">
-      KAYU</div>
+      <img
+        src="/src/static/icons/kayu.png"
+        alt="Kayu"
+        width="100px"
+        height="100px"
+      />
+      KAYU
+    </div>
   </div>
-  
 </div>
 
 <div class="layanan_container">
@@ -99,5 +135,3 @@
     </div>
   </div>
 </div>
-
-
