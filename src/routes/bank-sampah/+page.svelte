@@ -1,7 +1,8 @@
 <script>
-  import image_hero from "/src/static/images/amico.png";
-  import contentImage from "/src/static/images/bank_sampah.jpeg";
-  import daurUlang from "/src/static/images/daur_ulang.png";
+  import Hero from "../../components/Hero.svelte"
+  import image_hero from "/src/static/images/daur_ulang.png";
+  let title = "Tukarkan Sampahmu di Tracycle";
+  let caption = "Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!";
 </script>
 
 <svelte:head>
@@ -9,17 +10,7 @@
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<div class="container">
-  <div class="hero_title">
-    <h1>Bantu Pulihkan Bumi dengan Mengelola Sampah bersama Tracycle</h1>
-    <div class="hero_subtitle">
-      Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan
-      lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan
-      dalam pengelolaan sampah di sekitarmu!
-    </div>
-  </div>
-  <img class="image_hero" src={daurUlang} alt="Hero" />
-</div>
+<Hero {title} {caption} {image_hero}/>
 
 <div class="deskripsi_container">
   <div class="nama">

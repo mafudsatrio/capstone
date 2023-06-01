@@ -2,6 +2,9 @@
   import image_hero from "../static/images/amico.png";
   import contentImage from "../static/images/bank_sampah.jpeg";
   import daurUlang from "../static/images/daur_ulang.png";
+  import Hero from "../components/Hero.svelte"
+  let title = "Bantu Pulihkan Bumi dengan Mengelola Sampah bersama Tracycle"
+  let caption = "Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!"
 </script>
 
 <svelte:head>
@@ -9,18 +12,7 @@
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<div class="container">
-  <div class="hero_title">
-    <h1>Bantu Pulihkan Bumi dengan Mengelola Sampah bersama Tracycle</h1>
-    <div class="hero_subtitle">
-      Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan
-      lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan
-      dalam pengelolaan sampah di sekitarmu!
-    </div>
-    <button class="exchange_button">Tukarkan Sampah</button>
-  </div>
-  <img class="image_hero" src={image_hero} alt="Hero" />
-</div>
+<Hero {title} {caption} {image_hero}/>
 
 <div class="deskripsi_container">
   <div class="nama">
@@ -44,45 +36,43 @@
     <h1>Layanan Yang Kami Sediakan</h1>
   </div>
   <div class="sub_layanan">
-    <div class="sub_layanan">
-      <div class="layanan">
-        <img class="image_layanan" src={contentImage} alt="Layanan 1" />
-        <div class="layanan_title">
-          <h1>Bank Sampah</h1>
-        </div>
-        <div class="deskripsi_layanan">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            voluptas at? Nulla quis consectetur eveniet architecto
-          </p>
-        </div>
+    <div class="layanan">
+      <img class="image_layanan" src={contentImage} alt="Layanan 1" />
+      <div class="layanan_title">
+        <h1>Bank Sampah</h1>
       </div>
-      <div class="=layanan">
-        <img class="image_layanan" src={contentImage} alt="Layanan 2" />
-        <div class="layanan_title">
-          <h1>Pick Up Sampah</h1>
-        </div>
-        <div class="deskripsi_layanan">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            voluptas at? Nulla quis consectetur eveniet architecto
-          </p>
-        </div>
-      </div>
-      <div class="=layanan">
-        <img class="image_layanan" src={contentImage} alt="Layanan 3" />
-        <div class="layanan_title">
-          <h1>Bank Sampah</h1>
-        </div>
-        <div class="deskripsi_layanan">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            voluptas at? Nulla quis consectetur eveniet architecto
-          </p>
-        </div>
+      <div class="deskripsi_layanan">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+          voluptas at? Nulla quis consectetur eveniet architecto
+        </p>
       </div>
     </div>
-  </div>
+    <div class="=layanan">
+      <img class="image_layanan" src={contentImage} alt="Layanan 2" />
+      <div class="layanan_title">
+        <h1>Pick Up Sampah</h1>
+      </div>
+      <div class="deskripsi_layanan">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+          voluptas at? Nulla quis consectetur eveniet architecto
+        </p>
+      </div>
+    </div>
+    <div class="=layanan">
+      <img class="image_layanan" src={contentImage} alt="Layanan 3" />
+      <div class="layanan_title">
+        <h1>Bank Sampah</h1>
+      </div>
+      <div class="deskripsi_layanan">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+          voluptas at? Nulla quis consectetur eveniet architecto
+        </p>
+      </div>
+    </div>
+</div>
 </div>
 
 <div class="layanan_container">
@@ -91,8 +81,8 @@
   </div>
   <div class="sub_layanan">
     <div class="layanan">
-      <i class="icon_center fa fa-get-pocket fa-align-center fa-5x" />
-      <div class="sub_layanan_title">
+      <i class="icon_center fa fa-get-pocket fa-5x" />
+      <div class="layanan_title">
         <h1>Praktis</h1>
       </div>
       <div class="deskripsi_layanan">
@@ -104,8 +94,8 @@
       </div>
     </div>
     <div class="layanan">
-      <i class="icon_center fa fa-truck fa-align-center fa-5x" />
-      <div class="sub_layanan_title">
+      <i class="icon_center fa fa-truck fa-5x" />
+      <div class="layanan_title">
         <h1>Efisien</h1>
       </div>
       <div class="deskripsi_layanan">
@@ -117,8 +107,8 @@
       </div>
     </div>
     <div class="layanan">
-      <i class="icon_center fa fa-leaf fa-align-center fa-5x" />
-      <div class="sub_layanan_title">
+      <i class="icon_center fa fa-leaf fa-5x" />
+      <div class="layanan_title">
         <h1>Lingkungan Bersih</h1>
       </div>
       <div class="deskripsi_layanan">
@@ -132,15 +122,15 @@
   </div>
 </div>
 
-<div class="tukar_container">
-  <img class="image_hero" src={daurUlang} alt="Hero" />
+<div class="tukar_container container">
   <div class="hero_title">
-    <h1>Cara Daur Ulang</h1>
-    <div class="hero_subtitle">
-      Kami menyediakan informasi tentang pengolahan sampah berdasarkan jenisnya,
-      memberikan panduan yang dapat menginspirasi Anda untuk mengubah sampah
-      menjadi produk yang lebih bermanfaat melalui proses daur ulang.
-    </div>
-    <button class="exchange_button">Cara Daur Ulang</button>
+    <h1>Cara Mendaur Ulang Sampah</h1>
   </div>
+  <div class="hero_subtitle">
+    Kami menyediakan informasi tentang pengolahan sampah berdasarkan jenisnya,
+    memberikan panduan yang dapat menginspirasi Anda untuk mengubah sampah
+    menjadi produk yang lebih bermanfaat melalui proses daur ulang.
+  </div>
+  <button class="exchange_button">Cara Daur Ulang</button>
+  <img class="image_hero" src={daurUlang} alt="Hero" />
 </div>
