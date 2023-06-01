@@ -93,7 +93,7 @@ main {
   border-style: none;
 }
 
-.nav{
+.nav {
   width: 100%;
   padding-top: 9px;
   padding-bottom: 9px;
@@ -103,9 +103,9 @@ main {
   background-color: white;
   top: 0;
   overflow: hidden;
-  box-shadow: 2px 1px 15px 0px rgba(0,0,0,0.57);
-  -webkit-box-shadow: 2px 1px 15px 0px rgba(0,0,0,0.57);
-  -moz-box-shadow: 2px 1px 15px 0px rgba(0,0,0,0.57);
+  box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.57);
 }
 
 .nav__item {
@@ -124,7 +124,7 @@ main {
 }
 
 .nav__list {
-  list-style-type: none;  
+  list-style-type: none;
   display: flex;
   margin-top: 6px;
   float: right;
@@ -172,12 +172,12 @@ main {
   padding: 10px;
   font-size: 16px;
   color: black;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   border-radius: 5px;
   text-align: center;
   border-style: none;
   transition: background-color 0.3s;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
 }
 
 .exchange_button:hover {
@@ -216,13 +216,14 @@ main {
 .deskripsi_paragraf {
 }
 
-.layanan_container{
+.layanan_container {
   width: 100%;
   max-width: 1300px;
   margin: auto;
 }
 
-.layanan_title, .sub_layanan_title {
+.layanan_title,
+.sub_layanan_title {
   padding: 20px;
   text-align: center;
   font-size: 15px;
@@ -250,7 +251,6 @@ main {
   font-size: 12px;
   text-align: center;
   color: #395220;
-
 }
 
 .deskripsi_layanan {
@@ -284,12 +284,12 @@ footer {
   padding: 50px 100px 50px 100px;
 }
 
-.logo_footer{
+.logo_footer {
   height: 65px;
 }
 
 .footer-links li {
-  list-style-type: none;  
+  list-style-type: none;
 }
 
 .footer-links li a {
@@ -303,7 +303,8 @@ footer {
   transition: 0.5s;
 }
 
-.social-media, .footer-links {
+.social-media,
+.footer-links {
   margin-top: 25px;
 }
 
@@ -329,7 +330,8 @@ footer {
   font-size: 18px;
 }
 
-.copyright, .deskripsi_footer {
+.copyright,
+.deskripsi_footer {
   margin-top: 15px;
 }
 
@@ -353,16 +355,67 @@ footer {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto ;
+  grid-template-columns: auto auto auto;
   grid-gap: 10px;
 }
 
 .grid-container > div {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
   border-radius: 10px;
+}
+
+/* Daur Ulang */
+.container_daur-ulang {
+  margin: auto;
+
+  width: 300px; /* Sesuaikan lebar container sesuai kebutuhan */
+  background-color: #d9d9d9;
+  display: grid;
+  grid-template-columns: 300px 1fr; /* Lebar container_daur-ulang dan daur-ulang_deskripsi */
+  gap: 20px;
+}
+
+.half_container {
+  background-color: #4c7031;
+}
+
+.top {
+  background-color: #4c7031; /* Warna bagian atas container */
+  width: 100%;
+  height: 60%; /* Tinggi bagian atas container */
+}
+
+.bottom {
+  background-color: #d9d9d9; /* Warna bagian bawah container */
+  width: 100%;
+}
+
+.icon {
+  width: 30%;
+  height: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+
+.nama-item_daur-ulang {
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.daur-ulang_deskripsi {
+  background-color: #d9d9d9;
+  /* Sesuaikan styling dan ukuran daur-ulang_deskripsi sesuai kebutuhan */
+}
+
+.daur-ulang_deskripsi {
+  width: 895px;
+  background-color: #d9d9d9;
 }
 
 @media (max-width: 768px) {
