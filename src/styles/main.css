@@ -117,7 +117,8 @@ main {
   text-align: center;
 }
 
-.nav__item:hover {
+.nav__item:hover,
+.nav__item:active {
   color: white;
   transition: 0.5s;
   background-color: #395220;
@@ -444,6 +445,7 @@ footer {
   margin: auto;
   border-radius: 20px;
   padding: 20px;
+  border: 2px solid black;
 }
 
 .team_card {
