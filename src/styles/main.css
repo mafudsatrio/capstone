@@ -210,7 +210,7 @@ main {
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 50px;
-  max-width: 1300px;
+  max-width: 100%;
   margin: auto auto 50px auto;
 }
 
@@ -220,7 +220,7 @@ main {
 
 .layanan_container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -234,7 +234,7 @@ main {
 
 .sub_layanan {
   width: 100%;
-  max-width: 1300px;
+  max-width: 100%;
   margin: auto auto 50px auto;
 }
 
@@ -268,7 +268,7 @@ main {
 
 .tukar_container {
   border-radius: 10px;
-  max-width: 1300px;
+  max-width: 100%;
   margin: 100px auto auto auto;
 }
 
@@ -375,7 +375,7 @@ footer {
 
 .container_daur-ulang {
   margin: auto;
-  max-width: 1300px;
+  max-width: 100%;
   /* Sesuaikan lebar container sesuai kebutuhan */
   display: grid;
   grid-template-columns: auto;
@@ -427,13 +427,51 @@ footer {
   margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .footer-content,
-  .social-media,
-  .footer-links,
-  .social-icon {
-    flex-basis: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+.team {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  max-width: 100%;
+}
+
+.team_avatar {
+  background-color: #d9d9d9;
+  margin: auto;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.team_card {
+  align-content: center;
+  width: 100%;
+  display: block;
+}
+
+.icon_team {
+  display: block;
+}
+
+.team_image {
+  width: 150px;
+  margin: auto;
+}
+
+.nama_team {
+  padding: 20px;
+  text-align: center;
+  font-size: 10px;
+  color: #000000;
+  width: 100%;
+}
+
+.nama_univ {
+  text-align: center;
+  font-size: 10px;
+  color: #000000;
+  width: 100%;
 }
