@@ -12,30 +12,16 @@
 </svelte:head>
 
 <Hero {title} {caption} {image_hero} />
-
-<div class="deskripsi_container">
-  <div class="nama">
-    <h1>Tracycle</h1>
-  </div>
-  <div class="deskripsi_paragraf">
-    <p>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum."
-    </p>
-  </div>
-</div>
-
 <div class="layanan_container">
+  <div class="layanan_title">
+    <h1>Jenis Sampah</h1>
+    <p>Sampah yang dapat anda tukarkan di Tracycle</p>
+  </div>
   <div class="grid-container">
     <div class="item1">
       <img
-        src="/src/static/icons/botol.png"
-        alt="botol"
+        src="/src/static/icons/plastic.png"
+        alt="botol plastik"
         width="100px"
         height="100px"
       />
@@ -61,7 +47,7 @@
     </div>
     <div class="item4">
       <img
-        src="/src/static/icons/besi.png"
+        src="/src/static/icons/metal.png"
         alt="Besi"
         width="100px"
         height="100px"
@@ -91,45 +77,72 @@
 
 <div class="layanan_container">
   <div class="layanan_title">
-    <h1>Mengapa Kami</h1>
+    <h1>Cara Tukar Sampah</h1>
   </div>
   <div class="sub_layanan">
     <div class="layanan">
       <i class="icon_center fa fa-get-pocket fa-align-center fa-5x" />
       <div class="sub_layanan_title">
-        <h1>Praktis</h1>
+        <h1>Kategorikan sampah</h1>
       </div>
       <div class="deskripsi_layanan">
         <p>
-          Pengguna dapat dengan mudah menukar dan mengelola sampah mereka
-          melalui transaksi digital, tanpa repot datang ke tempat pengolahan
-          sampah secara mandiri.
+          Kategorikan sampah sesuai dengan jenisnya dan bedakan tempat tiap kategori sampah
         </p>
       </div>
     </div>
     <div class="layanan">
       <i class="icon_center fa fa-truck fa-align-center fa-5x" />
       <div class="sub_layanan_title">
-        <h1>Efisien</h1>
+        <h1>Hitung Berat Sampah</h1>
       </div>
       <div class="deskripsi_layanan">
         <p>
-          Layanan pick-up sampah yang disediakan memungkinkan pengguna untuk
-          mendapatkan sampah mereka dijemput langsung oleh tim Tracycle,
-          menghemat waktu dan tenaga.
+          Hitung berat sampah yang akan ditukarkan atau kamu bisa memperkirakan berat sampah yang akan ditukar
         </p>
       </div>
     </div>
     <div class="layanan">
       <i class="icon_center fa fa-leaf fa-align-center fa-5x" />
       <div class="sub_layanan_title">
-        <h1>Lingkungan Bersih</h1>
+        <h1>Isi Form Tukar Sampah</h1>
       </div>
       <div class="deskripsi_layanan">
         <p>
-          Masyarakat dapat lebih mudah dan terorganisir dalam membuang sampah
-          dengan benar, serta mendukung upaya daur ulang dan pengelolaan sampah
-          yang berkelanjutan.
+          Kamu dapat mengisi form yang sudah kami siapkan. Kamu harus mengisi alamat penjemputan dan data sampah.
+        </p>
+      </div>
+    </div>
+    <div class="layanan">
+      <i class="icon_center fa fa-truck fa-align-center fa-5x" />
+      <div class="sub_layanan_title">
+        <h1>Tunggu Penjemputan</h1>
+      </div>
+      <div class="deskripsi_layanan">
+        <p>
+          Tunggu tim kami penjemputan sampah yang akan dilakukan tim kami.
+        </p>
+      </div>
+    </div>
+    <div class="layanan">
+      <i class="icon_center fa fa-truck fa-align-center fa-5x" />
+      <div class="sub_layanan_title">
+        <h1>Tunggu Penjemputan</h1>
+      </div>
+      <div class="deskripsi_layanan">
+        <p>
+          Kamu dapat mengecek keseuaian timbangan sampah yang akan dilakukan tim kami. Pengecekan ini bertujuan untuk memberikan transparasi pengukuran.
+        </p>
+      </div>
+    </div>
+    <div class="layanan">
+      <i class="icon_center fa fa-truck fa-align-center fa-5x" />
+      <div class="sub_layanan_title">
+        <h1>Tunggu Penjemputan</h1>
+      </div>
+      <div class="deskripsi_layanan">
+        <p>
+          Setelah penjemputan dan pengukuran selesai, kamu dapat menunggu pembayaran yang otomatis masuk ke rekning kamu.
         </p>
       </div>
     </div>
