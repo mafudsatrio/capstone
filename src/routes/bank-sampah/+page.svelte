@@ -87,7 +87,7 @@
   </div>
   <div class="sub_layanan">
     <div class="layanan">
-      <img src ={satu} alt="kesatu">
+      <img src ={satu} class="tukar" alt="kesatu">
       <div class="sub_layanan_title">
         <h1>Kategorikan sampah</h1>
       </div>
@@ -98,7 +98,7 @@
       </div>
     </div>
     <div class="layanan">
-      <img src ={dua} alt="kedua">
+      <img src ={dua} class="tukar" alt="kedua">
       <div class="sub_layanan_title">
         <h1>Hitung Berat Sampah</h1>
       </div>
@@ -109,7 +109,7 @@
       </div>
     </div>
     <div class="layanan">
-      <img src ={tiga} alt="ketiga">
+      <img src ={tiga} class="tukar" alt="ketiga">
       <div class="sub_layanan_title">
         <h1>Isi Form Tukar Sampah</h1>
       </div>
@@ -120,7 +120,7 @@
       </div>
     </div>
     <div class="layanan">
-      <img src ={empat} alt="keempat">
+      <img src ={empat} class="tukar" alt="keempat">
       <div class="sub_layanan_title">
         <h1>Tunggu Penjemputan</h1>
       </div>
@@ -131,7 +131,7 @@
       </div>
     </div>
     <div class="layanan">
-      <img src ={lima} alt="kelima">
+      <img src ={lima} class="tukar" alt="kelima">
       <div class="sub_layanan_title">
         <h1>Tunggu Penjemputan</h1>
       </div>
@@ -142,7 +142,7 @@
       </div>
     </div>
     <div class="layanan">
-      <img src ={enam} alt="keenam">
+      <img src ={enam} class="tukar" alt="keenam">
       <div class="sub_layanan_title">
         <h1>Tunggu Penjemputan</h1>
       </div>
