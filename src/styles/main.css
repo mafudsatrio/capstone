@@ -446,6 +446,7 @@ footer {
   border-radius: 20px;
   padding: 20px;
   border: 2px solid black;
+  height: 350px;
 }
 
 .team_card {
@@ -461,6 +462,29 @@ footer {
 .team_image {
   width: 150px;
   margin: auto;
+}
+
+.icon_medsos-avtr {
+  width: 100%;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+}
+
+.medsos {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  color: #453c3c;
+  border-radius: 50%;
+  line-height: 40px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
 }
 
 .nama_team {

@@ -40,6 +40,10 @@
   <div class="team_image">
     <img class="icon_team" src="/src/static/icons/plastic.png" alt="Team Icon">
   </div>
+  <div class="icon_medsos-avtr">
+    <a href="#" class="medsos"><i class="fa fa-instagram" /></a>
+    <a href="#" class="medsos"><i class="fa fa-linkedin" /></a>
+  </div>
 </div>
   <div class="nama_team">
     <h2>Dena Indiarto Permadi</h2>
@@ -68,6 +72,7 @@
 <div class="team_image">
   <img class="icon_team" src="/src/static/icons/plastic.png" alt="Team Icon">
 </div>
+
 </div>
 <div class="nama_team">
   <h2>Mafud Satrio Setiono</h2>
