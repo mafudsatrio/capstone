@@ -8,7 +8,7 @@
 <div class="app">
   <Header />
 
-  <main id="maincontent">
+  <main>
     <slot />
   </main>
 

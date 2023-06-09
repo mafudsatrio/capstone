@@ -457,11 +457,10 @@ footer {
 .icon_team {
   display: block;
   margin: auto;
+  height: 175px;
 }
 
 .team_image {
-  width: 150px;
-  margin: auto;
 }
 
 .icon_medsos-avtr {
