@@ -29,7 +29,7 @@
     <div class="half_container">
       <div class="top">
         <div class="daur-ulang_icon">
-          <img class="icon" src="/src/static/icons/plastic.png" alt="botol" />
+          <img class="icon" src="/src/static/icons/plastik.png" alt="botol" />
         </div>
       </div>
       <div class="bottom">
@@ -112,7 +112,7 @@
     <div class="half_container">
       <div class="top">
         <div class="daur-ulang_icon">
-          <img class="icon" src="/src/static/icons/metal.png" alt="botol" />
+          <img class="icon" src="/src/static/icons/besi.png" alt="besi" />
         </div>
       </div>
       <div class="bottom">

@@ -2,6 +2,12 @@
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
   let title = "Tukarkan Sampahmu di Tracycle";
+  import satu from "/src/static/icons/1.png";
+  import dua from "/src/static/icons/2.png";
+  import tiga from "/src/static/icons/3.png";
+  import empat from "/src/static/icons/4.png";
+  import lima from "/src/static/icons/5.png";
+  import enam from "/src/static/icons/6.png";
   let caption =
     "Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!";
 </script>
@@ -81,7 +87,7 @@
   </div>
   <div class="sub_layanan">
     <div class="layanan">
-      <i class="icon_center fa fa-get-pocket fa-align-center fa-5x" />
+      <img src ={satu} alt="kesatu">
       <div class="sub_layanan_title">
         <h1>Kategorikan sampah</h1>
       </div>
@@ -92,7 +98,7 @@
       </div>
     </div>
     <div class="layanan">
-      <i class="icon_center fa fa-truck fa-align-center fa-5x" />
+      <img src ={dua} alt="kedua">
       <div class="sub_layanan_title">
         <h1>Hitung Berat Sampah</h1>
       </div>
@@ -103,7 +109,7 @@
       </div>
     </div>
     <div class="layanan">
-      <i class="icon_center fa fa-leaf fa-align-center fa-5x" />
+      <img src ={tiga} alt="ketiga">
       <div class="sub_layanan_title">
         <h1>Isi Form Tukar Sampah</h1>
       </div>
@@ -114,7 +120,7 @@
       </div>
     </div>
     <div class="layanan">
-      <i class="icon_center fa fa-truck fa-align-center fa-5x" />
+      <img src ={empat} alt="keempat">
       <div class="sub_layanan_title">
         <h1>Tunggu Penjemputan</h1>
       </div>
@@ -125,7 +131,7 @@
       </div>
     </div>
     <div class="layanan">
-      <i class="icon_center fa fa-truck fa-align-center fa-5x" />
+      <img src ={lima} alt="kelima">
       <div class="sub_layanan_title">
         <h1>Tunggu Penjemputan</h1>
       </div>
@@ -136,7 +142,7 @@
       </div>
     </div>
     <div class="layanan">
-      <i class="icon_center fa fa-truck fa-align-center fa-5x" />
+      <img src ={enam} alt="keenam">
       <div class="sub_layanan_title">
         <h1>Tunggu Penjemputan</h1>
       </div>
