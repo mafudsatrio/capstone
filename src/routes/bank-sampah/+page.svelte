@@ -83,75 +83,82 @@
     </div>
   </div>
 
-<div class="layanan_container">
-  <div class="layanan_title">
-    <h1>Cara Tukar Sampah</h1>
-  </div>
-  <div class="sub_layanan">
-    <div class="layanan">
-      <img src ={satu} class="tukar" alt="kesatu">
-      <div class="sub_layanan_title">
-        <h1>Kategorikan sampah</h1>
-      </div>
-      <div class="deskripsi_layanan">
-        <p>
-          Kategorikan sampah sesuai dengan jenisnya dan bedakan tempat tiap kategori sampah
-        </p>
-      </div>
+  <div class="layanan_container">
+    <div class="layanan_title">
+      <h1>Cara Tukar Sampah</h1>
     </div>
-    <div class="layanan">
-      <img src ={dua} class="tukar" alt="kedua">
-      <div class="sub_layanan_title">
-        <h1>Hitung Berat Sampah</h1>
+    <div class="sub_layanan">
+      <div class="layanan">
+        <img src={satu} class="tukar" alt="kesatu" />
+        <div class="sub_layanan_title">
+          <h1>Kategorikan sampah</h1>
+        </div>
+        <div class="deskripsi_layanan">
+          <p>
+            Kategorikan sampah sesuai dengan jenisnya dan bedakan tempat tiap
+            kategori sampah
+          </p>
+        </div>
       </div>
-      <div class="deskripsi_layanan">
-        <p>
-          Hitung berat sampah yang akan ditukarkan atau kamu bisa memperkirakan berat sampah yang akan ditukar
-        </p>
+      <div class="layanan">
+        <img src={dua} class="tukar" alt="kedua" />
+        <div class="sub_layanan_title">
+          <h1>Hitung Berat Sampah</h1>
+        </div>
+        <div class="deskripsi_layanan">
+          <p>
+            Hitung berat sampah yang akan ditukarkan atau kamu bisa
+            memperkirakan berat sampah yang akan ditukar
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="layanan">
-      <img src ={tiga} class="tukar" alt="ketiga">
-      <div class="sub_layanan_title">
-        <h1>Isi Form Tukar Sampah</h1>
+      <div class="layanan">
+        <img src={tiga} class="tukar" alt="ketiga" />
+        <div class="sub_layanan_title">
+          <h1>Isi Form Tukar Sampah</h1>
+        </div>
+        <div class="deskripsi_layanan">
+          <p>
+            Kamu dapat mengisi form yang sudah kami siapkan. Kamu harus mengisi
+            alamat penjemputan dan data sampah.
+          </p>
+        </div>
       </div>
-      <div class="deskripsi_layanan">
-        <p>
-          Kamu dapat mengisi form yang sudah kami siapkan. Kamu harus mengisi alamat penjemputan dan data sampah.
-        </p>
+      <div class="layanan">
+        <img src={empat} class="tukar" alt="keempat" />
+        <div class="sub_layanan_title">
+          <h1>Tunggu Penjemputan</h1>
+        </div>
+        <div class="deskripsi_layanan">
+          <p>
+            Tunggu tim kami penjemputan sampah yang akan dilakukan tim kami.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="layanan">
-      <img src ={empat} class="tukar" alt="keempat">
-      <div class="sub_layanan_title">
-        <h1>Tunggu Penjemputan</h1>
+      <div class="layanan">
+        <img src={lima} class="tukar" alt="kelima" />
+        <div class="sub_layanan_title">
+          <h1>Tunggu Penjemputan</h1>
+        </div>
+        <div class="deskripsi_layanan">
+          <p>
+            Kamu dapat mengecek keseuaian timbangan sampah yang akan dilakukan
+            tim kami. Pengecekan ini bertujuan untuk memberikan transparasi
+            pengukuran.
+          </p>
+        </div>
       </div>
-      <div class="deskripsi_layanan">
-        <p>
-          Tunggu tim kami penjemputan sampah yang akan dilakukan tim kami.
-        </p>
-      </div>
-    </div>
-    <div class="layanan">
-      <img src ={lima} class="tukar" alt="kelima">
-      <div class="sub_layanan_title">
-        <h1>Tunggu Penjemputan</h1>
-      </div>
-      <div class="deskripsi_layanan">
-        <p>
-          Kamu dapat mengecek keseuaian timbangan sampah yang akan dilakukan tim kami. Pengecekan ini bertujuan untuk memberikan transparasi pengukuran.
-        </p>
-      </div>
-    </div>
-    <div class="layanan">
-      <img src ={enam} class="tukar" alt="keenam">
-      <div class="sub_layanan_title">
-        <h1>Tunggu Penjemputan</h1>
-      </div>
-      <div class="deskripsi_layanan">
-        <p>
-          Setelah penjemputan dan pengukuran selesai, kamu dapat menunggu pembayaran yang otomatis masuk ke rekning kamu.
-        </p>
+      <div class="layanan">
+        <img src={enam} class="tukar" alt="keenam" />
+        <div class="sub_layanan_title">
+          <h1>Tunggu Penjemputan</h1>
+        </div>
+        <div class="deskripsi_layanan">
+          <p>
+            Setelah penjemputan dan pengukuran selesai, kamu dapat menunggu
+            pembayaran yang otomatis masuk ke rekning kamu.
+          </p>
+        </div>
       </div>
     </div>
   </div>
