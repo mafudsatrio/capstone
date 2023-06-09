@@ -360,7 +360,7 @@ footer {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 }
 
@@ -435,7 +435,7 @@ footer {
 
 .team_container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   max-width: 100%;
 }
@@ -443,10 +443,9 @@ footer {
 .team_avatar {
   background-color: #d9d9d9;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 20px;
-  border: 2px solid black;
-  height: 350px;
+  text-align: center;
 }
 
 .team_card {
@@ -457,6 +456,7 @@ footer {
 
 .icon_team {
   display: block;
+  margin: auto;
 }
 
 .team_image {
@@ -467,10 +467,9 @@ footer {
 .icon_medsos-avtr {
   width: 100%;
   align-content: center;
+  text-align: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 50px;
+  margin-top: 10px;
 }
 
 .medsos {
@@ -483,7 +482,6 @@ footer {
   color: #453c3c;
   border-radius: 50%;
   line-height: 40px;
-  margin-top: 15px;
   transition: background-color 0.3s ease;
 }
 
