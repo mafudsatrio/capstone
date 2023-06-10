@@ -1,6 +1,7 @@
 <script>
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
+
 </script>
 
 <svelte:head>
@@ -182,14 +183,20 @@
         <select id="jenis" name="jenis" required>
           <option value="">Pilih Jenis Sampah</option>
           <option value="plastik">Plastik</option>
-          <option value="kertas">Kertas</option>
+          <option value="kertas">Kertas/Karton</option>
           <option value="logam">Logam</option>
           <option value="kaca">Kaca</option>
+          <option value="kaleng">Kaleng</option>
+          <option value="kardus">Kardus</option>
         </select>
       </div>
       <div class="form-group">
         <label for="berat">Berat (Kg):</label>
         <input type="number" id="berat" name="berat" required />
+      </div>
+      <div class="form-group">
+        <label for="hargaTotal">Harga Total:</label>
+        <input type="text" id="hargaTotal" name="hargaTotal" readonly />
       </div>
 
       <input type="submit" value="Submit" />
