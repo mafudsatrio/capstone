@@ -38,7 +38,7 @@
 @media screen and (min-width: 800px) {
   .sub_layanan {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
   }
 
@@ -80,7 +80,7 @@
 
 @media screen and (min-width: 1000px) {
   .maincontent {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
   }
 }

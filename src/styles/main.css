@@ -30,6 +30,16 @@ main {
   margin: 0 auto;
 }
 
+hr {
+  width: 100px;
+  height: 5px;
+  color: #395220;
+  text-align: center;
+  background-color: #395220;
+  border-radius: 3px;
+  margin: 5px auto;
+}
+
 /** HEADER */
 
 .header {
@@ -212,7 +222,7 @@ main {
   padding-right: 100px;
   padding-bottom: 50px;
   max-width: 100%;
-  margin: auto auto 50px auto;
+  margin: 50px auto 50px auto;
 }
 
 .nama h1 {
@@ -225,7 +235,6 @@ main {
   margin: auto;
 }
 
-.layanan_title,
 .sub_layanan_title {
   padding: 20px;
   text-align: center;
@@ -235,7 +244,6 @@ main {
 
 .sub_layanan {
   width: 100%;
-  max-width: 100%;
   margin: auto auto 50px auto;
 }
 
@@ -246,13 +254,10 @@ main {
   margin-right: auto;
 }
 
-.layanan {
-  align-items: center;
-}
-
 .layanan_title {
-  font-size: 12px;
+  padding: 5px;
   text-align: center;
+  font-size: 15px;
   color: #395220;
 }
 
@@ -269,14 +274,18 @@ main {
 
 .tukar_container {
   border-radius: 10px;
-  max-width: 100%;
+  width: 100%;
   margin: 100px auto auto auto;
 }
 .tukar{
+  width: 85px;
+  text-align: center;
+  color: white;
+  background-color: #395220;
+  font-size: 40px;
+  padding: 20px;
   border-radius: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 /* footer */
 
@@ -288,7 +297,6 @@ footer {
 }
 
 .footer-container {
-  display: grid;
   width: 100%;
   padding: 50px 100px 50px 100px;
 }
@@ -502,4 +510,50 @@ footer {
   font-size: 10px;
   color: #000000;
   width: 100%;
+}
+
+/* formulir */
+.formulir {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulir h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='number'],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type='submit'] {
+  background-color: #395220;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #4caf50;
 }

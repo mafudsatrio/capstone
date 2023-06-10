@@ -1,28 +1,24 @@
 <script>
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
-  let title = "Tukarkan Sampahmu di Tracycle";
-  import satu from "/src/static/icons/1.png";
-  import dua from "/src/static/icons/2.png";
-  import tiga from "/src/static/icons/3.png";
-  import empat from "/src/static/icons/4.png";
-  import lima from "/src/static/icons/5.png";
-  import enam from "/src/static/icons/6.png";
-  let caption =
-    "Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!";
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Tracycle - Bank Sampah</title>
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<Hero {title} {caption} {image_hero} />
+<Hero
+  title="Tukarkan Sampahmu di Tracycle"
+  caption="Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!"
+  {image_hero}
+/>
 
 <div class="maincontent" id="maincontent">
   <div class="layanan_container">
     <div class="layanan_title">
       <h1>Jenis Sampah</h1>
+      <hr />
       <p>Sampah yang dapat anda tukarkan di Tracycle</p>
     </div>
     <div class="grid-container">
@@ -86,10 +82,11 @@
   <div class="layanan_container">
     <div class="layanan_title">
       <h1>Cara Tukar Sampah</h1>
+      <hr />
     </div>
     <div class="sub_layanan">
       <div class="layanan">
-        <img src={satu} class="tukar" alt="kesatu" />
+        <p class="tukar">1</p>
         <div class="sub_layanan_title">
           <h1>Kategorikan sampah</h1>
         </div>
@@ -101,7 +98,7 @@
         </div>
       </div>
       <div class="layanan">
-        <img src={dua} class="tukar" alt="kedua" />
+        <p class="tukar">2</p>
         <div class="sub_layanan_title">
           <h1>Hitung Berat Sampah</h1>
         </div>
@@ -113,7 +110,7 @@
         </div>
       </div>
       <div class="layanan">
-        <img src={tiga} class="tukar" alt="ketiga" />
+        <p class="tukar">3</p>
         <div class="sub_layanan_title">
           <h1>Isi Form Tukar Sampah</h1>
         </div>
@@ -125,7 +122,7 @@
         </div>
       </div>
       <div class="layanan">
-        <img src={empat} class="tukar" alt="keempat" />
+        <p class="tukar">4</p>
         <div class="sub_layanan_title">
           <h1>Tunggu Penjemputan</h1>
         </div>
@@ -136,7 +133,7 @@
         </div>
       </div>
       <div class="layanan">
-        <img src={lima} class="tukar" alt="kelima" />
+        <p class="tukar">5</p>
         <div class="sub_layanan_title">
           <h1>Tunggu Penjemputan</h1>
         </div>
@@ -149,7 +146,7 @@
         </div>
       </div>
       <div class="layanan">
-        <img src={enam} class="tukar" alt="keenam" />
+        <p class="tukar">6</p>
         <div class="sub_layanan_title">
           <h1>Tunggu Penjemputan</h1>
         </div>
@@ -161,5 +158,41 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="formulir">
+    <form class="formulir">
+      <h2>Biodata</h2>
+      <div class="form-group">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required />
+      </div>
+      <div class="form-group">
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat" required />
+      </div>
+      <div class="form-group">
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" required />
+      </div>
+
+      <h2>Jenis Sampah</h2>
+      <div class="form-group">
+        <label for="jenis">Jenis Sampah:</label>
+        <select id="jenis" name="jenis" required>
+          <option value="">Pilih Jenis Sampah</option>
+          <option value="plastik">Plastik</option>
+          <option value="kertas">Kertas</option>
+          <option value="logam">Logam</option>
+          <option value="kaca">Kaca</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="berat">Berat (Kg):</label>
+        <input type="number" id="berat" name="berat" required />
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
   </div>
 </div>

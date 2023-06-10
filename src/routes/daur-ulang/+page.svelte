@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Tracycle - Daur Ulang</title>
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -17,6 +17,7 @@
   <div class="layanan_container">
     <div class="layanan_title">
       <h1>Cara Daur Ulang Sampah</h1>
+      <hr />
     </div>
     <div class="deskripsi_layanan">
       <p>
