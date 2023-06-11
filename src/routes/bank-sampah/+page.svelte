@@ -2,6 +2,36 @@
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
 
+  import { createEventDispatcher } from 'svelte';
+
+const dispatch = createEventDispatcher();
+
+let beratSampah = 0;
+let jenisSampah = '';
+let hargaTotal = 0;
+
+$: {
+  if (jenisSampah === 'plastik') {
+    hargaTotal = beratSampah * 1000;
+  } else if (jenisSampah === 'kertas') {
+    hargaTotal = beratSampah * 1500;
+  } else if (jenisSampah === 'logam') {
+    hargaTotal = beratSampah * 2000;
+  } else if (jenisSampah === 'kaca') {
+    hargaTotal = beratSampah * 2500;
+  } else if (jenisSampah === 'kaleng') {
+    hargaTotal = beratSampah * 3000;
+  } else if (jenisSampah === 'kardus') {
+    hargaTotal = beratSampah * 3500;
+  } else {
+    hargaTotal = 0;
+  }
+}
+
+function submitForm() {
+  dispatch('submit', { berat: beratSampah, jenis: jenisSampah, harga: hargaTotal });
+}
+
 </script>
 
 <svelte:head>
@@ -160,6 +190,7 @@
       </div>
     </div>
   </div>
+  </div>
 
   <div class="formulir">
     <form class="formulir">
@@ -176,30 +207,36 @@
         <label for="telepon">Nomor Telepon:</label>
         <input type="tel" id="telepon" name="telepon" required />
       </div>
-
-      <h2>Jenis Sampah</h2>
       <div class="form-group">
-        <label for="jenis">Jenis Sampah:</label>
-        <select id="jenis" name="jenis" required>
-          <option value="">Pilih Jenis Sampah</option>
-          <option value="plastik">Plastik</option>
-          <option value="kertas">Kertas/Karton</option>
-          <option value="logam">Logam</option>
-          <option value="kaca">Kaca</option>
-          <option value="kaleng">Kaleng</option>
-          <option value="kardus">Kardus</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="berat">Berat (Kg):</label>
-        <input type="number" id="berat" name="berat" required />
-      </div>
-      <div class="form-group">
-        <label for="hargaTotal">Harga Total:</label>
-        <input type="text" id="hargaTotal" name="hargaTotal" readonly />
+        <label for="telepon">Alamat Email:</label>
+        <input type="tel" id="telepon" name="telepon" required />
       </div>
 
-      <input type="submit" value="Submit" />
-    </form>
-  </div>
+
+<h2>Jenis Sampah</h2>
+<div class="form-group">
+<label for="jenis">Jenis Sampah:</label>
+<select id="jenis" bind:value={jenisSampah} required>
+  <option value="">Pilih Jenis Sampah</option>
+  <option value="plastik">Plastik</option>
+  <option value="kertas">Kertas/Karton</option>
+  <option value="logam">Logam</option>
+  <option value="kaca">Kaca</option>
+  <option value="kaleng">Kaleng</option>
+  <option value="kardus">Kardus</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="berat">Berat (Kg):</label>
+<input type="number" id="berat" bind:value={beratSampah} required />
+</div>
+
+<div class="form-group">
+<label for="hargaTotal">Harga Total:</label>
+<input type="text" id="hargaTotal" value={hargaTotal} readonly />
+</div>
+
+<button on:click={submitForm} type="submit" class="submit">Submit</button>
+</form>
 </div>

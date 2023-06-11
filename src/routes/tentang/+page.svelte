@@ -1,10 +1,22 @@
 <script>
+  import Hero from "../../components/Hero.svelte";
+  import image_hero from "/src/static/images/image_page.png";
 </script>
 
 <svelte:head>
   <title>Tracycle - Tentang</title>
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
+
+<Hero
+  title="Yuk Kenalan dengan Tracycle"
+  caption="Selamat datang di laman kami! Di sini, kami ingin berbagi dengan Anda mengenai 
+  visi misi kami, tentang kami sebagai tim, serta memberikan informasi tentang aplikasi 
+  yang kami hasilkan. Kami percaya bahwa dengan memahami lebih dalam mengenai nilai-nilai 
+  kami dan tujuan kami dalam menciptakan solusi yang bermanfaat, Anda akan semakin yakin 
+  dengan apa yang kami tawarkan."
+  {image_hero}
+/>
 
 <div class="maincontent" id="maincontent">
   <div class="deskripsi_container">

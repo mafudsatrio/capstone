@@ -1,6 +1,7 @@
 <script>
   import { page } from "$app/stores";
   import logo from "../static/logo/logo.png";
+  
 </script>
 
 <header>
