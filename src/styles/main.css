@@ -313,6 +313,29 @@ hr {
     margin: 50px auto 50px auto;
 }
 
+.konsul_container {
+    background-color: #4c7031;
+    border-radius: 10px;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    max-width: 100%;
+    margin: 50px auto 50px auto;
+}
+
+.con,
+.deskripsi_konsul {
+    margin-top: 50px;
+    width: 70%;
+}
+.logo-konsul{
+    height: 30px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
 .nama h1 {
     padding: 20px;
 }
