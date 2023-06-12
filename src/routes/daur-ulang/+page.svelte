@@ -11,7 +11,7 @@
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<Hero {title} {caption} {image_hero} />
+<Hero {title} {caption} {image_hero} link="/bank-sampah" />
 
 <div class="maincontent" id="maincontent">
   <div class="layanan_container">

@@ -26,24 +26,33 @@
     .container {
         padding: 20px;
     }
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
+    .topnav a:not(:first-child) {
+        display: none;
     }
-    .topnav.responsive {position: relative;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
     .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .grid-container {
+        grid-template-columns: 2fr 2fr;
+    }
+    .card_daur_ulang {
+        grid-template-columns: 1fr;
     }
 }
-  
 
 @media screen and (min-width: 800px) {
     .sub_layanan {
@@ -61,12 +70,18 @@
     }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1200px) {
     .image_hero {
         display: none;
     }
     .container {
         grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .team_container {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -102,5 +117,53 @@
         flex-basis: 100%;
         text-align: center;
         margin-bottom: 20px;
+    }
+    .header li a {
+        margin-left: 0;
+    }
+    .container {
+        padding-top: 80px;
+    }
+    .team_container {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        padding: 5px;
+    }
+    .deskripsi_footer,
+    .copyright {
+        width: 100%;
+    }
+    .deskripsi_container {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+    .header {
+        width: 100%;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 100px;
+        padding-right: 100px;
+        position: sticky;
+        background-color: white;
+        top: 0;
+        overflow: hidden;
+        box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.57);
     }
 }
