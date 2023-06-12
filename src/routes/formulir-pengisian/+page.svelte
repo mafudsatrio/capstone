@@ -32,6 +32,22 @@
             <p><img class="logo-konsul" src={email} alt="Logo HandPhone" />tracycleforearth@gmail.com</p>
         </ul>
       </div>
+      <div class="formulir-konsul" id="formulir-konsul">
+        <form class="formulir-konsul">
+          <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="Email" required />
+        </div>
+        <div class="form-group">
+          <label for="Message">Message:</label>
+          <input type="Message" id="Message" name="Message" required />
+        </div>
+      </form>
     </div>
+  </div>
   </div>
 </div>

@@ -648,7 +648,18 @@ footer {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+.formulir-konsul {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #4C7031;
+    border-radius: 10px;
+}
+.formulir-konsul h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #395220;
+}
 .formulir h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -662,13 +673,14 @@ footer {
 label {
     display: block;
     font-weight: bold;
-    color: #395220;
+    color: #10110e;
 }
 
 input[type='text'],
 input[type='tel'],
 input[type='email'],
 input[type='number'],
+input[type='Message'],
 select {
     width: 100%;
     padding: 10px;

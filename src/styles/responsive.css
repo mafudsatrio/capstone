@@ -70,6 +70,11 @@
         grid-template-columns: auto auto auto;
         gap: 100px;
     }
+    .formulir-konsul {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+    }
     .hamburger {
         display: none;
     }
