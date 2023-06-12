@@ -4,6 +4,7 @@
   import daurUlang from "../static/images/daur_ulang.png";
   import Hero from "../components/Hero.svelte";
   import bank from "../static/icons/Bank.png";
+  import pick from "../static/images/Pick.png";
 </script>
 
 <svelte:head>
@@ -54,26 +55,24 @@
         </div>
       </div>
       <div class="=layanan">
-        <img class="image_layanan" src={contentImage} alt="Layanan 2" />
+        <img class="image_layanan" src={pick} alt="Layanan 2" />
         <div class="layanan_title">
           <h1>Pick Up Sampah</h1>
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            voluptas at? Nulla quis consectetur eveniet architecto
+            Tinggal beritahu kami dimana saja, dan sampahmu akan segera dijemput! Tim kami siap menjemputnya di tempatmu dengan senang hati.
           </p>
         </div>
       </div>
       <div class="=layanan">
         <img class="image_layanan" src={contentImage} alt="Layanan 3" />
         <div class="layanan_title">
-          <h1>Bank Sampah</h1>
+          <h1>Konsultasi Sampah</h1>
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            voluptas at? Nulla quis consectetur eveniet architecto
+            Mari konsultasikan tentang pengelolaan sampahmu! Kami siap membantu kamu mengatasi segala masalah terkait sampah dengan cepat dan praktis. 
           </p>
         </div>
       </div>
