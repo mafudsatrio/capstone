@@ -74,12 +74,12 @@
       </div>
       <div class="item3">
         <img
-          src="/src/static/icons/botolkaca.png"
+          src="/src/static/icons/kaleng.png"
           alt="botol kaca"
           width="100px"
           height="100px"
         />
-        BOTOL KACA
+        KALENG
       </div>
       <div class="item4">
         <img
@@ -101,12 +101,12 @@
       </div>
       <div class="item6">
         <img
-          src="/src/static/icons/kayu.png"
+          src="/src/static/icons/kardus.png"
           alt="Kayu"
           width="100px"
           height="100px"
         />
-        KAYU
+        KARDUS
       </div>
     </div>
   </div>
