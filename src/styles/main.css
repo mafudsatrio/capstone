@@ -352,6 +352,7 @@ footer {
 .copyright,
 .deskripsi_footer {
   margin-top: 15px;
+  width: 70%;
 }
 
 /** SKIP LINK */
