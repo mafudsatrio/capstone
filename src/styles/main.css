@@ -94,8 +94,6 @@ hr {
     top: 0;
     overflow: hidden;
     box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.57);
-    -webkit-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.57);
-    -moz-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.57);
 }
 
 .nav__item {
@@ -112,6 +110,13 @@ hr {
 .nav__item.active {
     color: white;
     background-color: #395220;
+}
+
+.nav__item:active,
+.nav__item.active {
+    color: white;
+    background-color: #395220;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.12) inset;
 }
 
 .nav__list {
@@ -549,18 +554,19 @@ select {
 .submit {
     display: block;
     width: 100%;
-    padding: 12px;
-    background-color: #395220;
+    padding: 14px;
+    background-color: #4c7031;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
     transition: background-color 0.3s ease;
+    font-family: 'Ubuntu';
 }
 
 .submit:hover {
-    background-color: #6ca02d;
+    background-color: #395220;
 }
 
 .btn {

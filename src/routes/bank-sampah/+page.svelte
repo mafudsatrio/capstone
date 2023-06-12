@@ -27,7 +27,7 @@
       hargaPerKilo = 0;
     }
 
-    hargaTotal = beratSampah * hargaPerKilo;
+    hargaTotal = Math.round(beratSampah * hargaPerKilo);
   }
 
   function submitForm() {
