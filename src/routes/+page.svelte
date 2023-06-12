@@ -26,13 +26,13 @@
     </div>
     <div class="deskripsi_paragraf">
       <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
+        Tracycle adalah aplikasi berbasis web inovatif yang memfasilitasi masyarakat dalam mengelola sampah  
+        menjadi uang dengan cara yang praktis dan efisien. Melalui aplikasi Tracycle, pengguna dapat dengan  
+        mudah menukar sampah dengan uang, sambil juga mendapatkan informasi tentang cara pengolahan sampah yang 
+        benar, edukasi mengenai jenis sampah, dan informasi berguna terkait pengelolaan sampah. Kami berkomitmen untuk  
+        menciptakan lingkungan yang bersih dan sekaligus memberikan manfaat finansial kepada masyarakat melalui 
+        pengelolaan sampah yang efisien. Dengan Tracycle, Anda dapat berkontribusi dalam menjaga kebersihan lingkungan 
+        sekaligus mendapatkan manfaat ekonomi dari sampah yang Anda kelola. Bergabunglah dengan Tracycle sekarang untuk menciptakan masa depan yang lebih baik.
       </p>
     </div>
   </div>
