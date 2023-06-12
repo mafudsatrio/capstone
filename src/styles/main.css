@@ -180,9 +180,9 @@ hr {
 }
 
 .nav__item:hover,
-.nav__item:active {
+.nav__item:active,
+.nav__item.active {
   color: white;
-  transition: 0.5s;
   background-color: #395220;
 }
 
@@ -301,6 +301,7 @@ hr {
 }
 
 .image_layanan {
+  width: 100%;
   border-radius: 5px;
   display: block;
   margin-left: auto;
@@ -403,6 +404,7 @@ footer {
 .copyright,
 .deskripsi_footer {
   margin-top: 15px;
+  width: 70%;
 }
 
 /** SKIP LINK */
@@ -535,6 +537,7 @@ footer {
   text-align: center;
   display: block;
   margin-top: 10px;
+  transition: transform 0.3s ease;
 }
 
 .medsos {
@@ -544,10 +547,16 @@ footer {
   align-items: center;
   text-align: center;
   background-color: #fff;
-  color: #453c3c;
+  color: #395220;
   border-radius: 50%;
   line-height: 40px;
   transition: background-color 0.3s ease;
+}
+
+.medsos:hover {
+  transform: scale(1.2); /* Perbesar elemen saat dihover */
+  background-color: #4c7031;
+  color: #ffffff;
 }
 
 .nama_team {
@@ -565,52 +574,62 @@ footer {
   width: 100%;
 }
 
-/* formulir */
 .formulir {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
   background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #395220;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .formulir h2 {
   text-align: center;
+  margin-bottom: 20px;
+  color: #395220;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
   font-weight: bold;
+  color: #395220;
 }
 
 input[type='text'],
 input[type='tel'],
+input[type='email'],
 input[type='number'],
 select {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .submit {
-  display: inline-block;
-  padding: 8px 16px;
+  display: block;
+  width: 100%;
+  padding: 12px;
   background-color: #395220;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  align-content: right;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .submit:hover {
   background-color: #6ca02d;
+}
+
+.btn {
+  text-align: right;
 }
 
 .form-container {

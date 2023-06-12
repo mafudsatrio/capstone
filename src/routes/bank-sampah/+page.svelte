@@ -1,36 +1,38 @@
 <script>
-  import Hero from "../../components/Hero.svelte";
+import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
-
   import { createEventDispatcher } from 'svelte';
 
-const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher();
 
-let beratSampah = 0;
-let jenisSampah = '';
-let hargaTotal = 0;
+  let beratSampah = 0;
+  let jenisSampah = '';
+  let hargaTotal = 0;
+  let hargaPerKilo = 0;
 
-$: {
-  if (jenisSampah === 'plastik') {
-    hargaTotal = beratSampah * 1000;
-  } else if (jenisSampah === 'kertas') {
-    hargaTotal = beratSampah * 1500;
-  } else if (jenisSampah === 'logam') {
-    hargaTotal = beratSampah * 2000;
-  } else if (jenisSampah === 'kaca') {
-    hargaTotal = beratSampah * 2500;
-  } else if (jenisSampah === 'kaleng') {
-    hargaTotal = beratSampah * 3000;
-  } else if (jenisSampah === 'kardus') {
-    hargaTotal = beratSampah * 3500;
-  } else {
-    hargaTotal = 0;
+  $: {
+    if (jenisSampah === 'plastik') {
+      hargaPerKilo = 1000;
+    } else if (jenisSampah === 'kertas') {
+      hargaPerKilo = 1500;
+    } else if (jenisSampah === 'logam') {
+      hargaPerKilo = 2000;
+    } else if (jenisSampah === 'kaca') {
+      hargaPerKilo = 2500;
+    } else if (jenisSampah === 'kaleng') {
+      hargaPerKilo = 3000;
+    } else if (jenisSampah === 'kardus') {
+      hargaPerKilo = 3500;
+    } else {
+      hargaPerKilo = 0;
+    }
+    
+    hargaTotal = beratSampah * hargaPerKilo;
   }
-}
 
-function submitForm() {
-  dispatch('submit', { berat: beratSampah, jenis: jenisSampah, harga: hargaTotal });
-}
+  function submitForm() {
+    dispatch('submit', { berat: beratSampah, jenis: jenisSampah, harga: hargaTotal });
+  }
 
 </script>
 
@@ -190,7 +192,7 @@ function submitForm() {
       </div>
     </div>
   </div>
-  </div>
+ 
 
   <div class="formulir">
     <form class="formulir">
@@ -208,8 +210,8 @@ function submitForm() {
         <input type="tel" id="telepon" name="telepon" required />
       </div>
       <div class="form-group">
-        <label for="telepon">Alamat Email:</label>
-        <input type="tel" id="telepon" name="telepon" required />
+        <label for="email">Alamat Email:</label>
+        <input type="email" id="email" name="email" required />
       </div>
 
 
@@ -217,7 +219,7 @@ function submitForm() {
 <div class="form-group">
 <label for="jenis">Jenis Sampah:</label>
 <select id="jenis" bind:value={jenisSampah} required>
-  <option value="">Pilih Jenis Sampah</option>
+  <option value="" disabled selected color='#grey'>Pilih Jenis Sampah :</option>
   <option value="plastik">Plastik</option>
   <option value="kertas">Kertas/Karton</option>
   <option value="logam">Logam</option>
@@ -229,14 +231,22 @@ function submitForm() {
 
 <div class="form-group">
 <label for="berat">Berat (Kg):</label>
-<input type="number" id="berat" bind:value={beratSampah} required />
+<input type="number" min="1" max="100" step=".1" id="berat" bind:value={beratSampah} required />
+</div>
+
+<div class="form-group">
+  <label for="hargaPerKilo">Harga Per Kilo:</label>
+  <input type="text" id="hargaPerKilo" value=Rp.{hargaPerKilo} readonly />
 </div>
 
 <div class="form-group">
 <label for="hargaTotal">Harga Total:</label>
-<input type="text" id="hargaTotal" value={hargaTotal} readonly />
+<input type="text" id="hargaTotal" value=Rp.{hargaTotal} readonly />
 </div>
 
-<button on:click={submitForm} type="submit" class="submit">Submit</button>
+<div class="btn">
+  <button on:click={submitForm} type="submit" class="submit">Submit</button>
+</div>
 </form>
+</div>
 </div>
