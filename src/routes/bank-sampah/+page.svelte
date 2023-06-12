@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
   import { createEventDispatcher } from "svelte";
@@ -9,24 +11,17 @@
   let jenisSampah = "";
   let hargaTotal = 0;
   let hargaPerKilo = 0;
+  const SAMPAH = {
+    'plastik': 1000,
+    'kertas': 1500,
+    'logam': 2000,
+    'kaca': 2500,
+    'kaleng': 3000,
+    'kardus': 3500,
+  }
 
   $: {
-    if (jenisSampah === "plastik") {
-      hargaPerKilo = 1000;
-    } else if (jenisSampah === "kertas") {
-      hargaPerKilo = 1500;
-    } else if (jenisSampah === "logam") {
-      hargaPerKilo = 2000;
-    } else if (jenisSampah === "kaca") {
-      hargaPerKilo = 2500;
-    } else if (jenisSampah === "kaleng") {
-      hargaPerKilo = 3000;
-    } else if (jenisSampah === "kardus") {
-      hargaPerKilo = 3500;
-    } else {
-      hargaPerKilo = 0;
-    }
-
+    hargaPerKilo = SAMPAH[jenisSampah] ?? 0;
     hargaTotal = beratSampah * hargaPerKilo;
   }
 
@@ -198,7 +193,7 @@
   </div>
 
   <div class="formulir" id="formulir">
-    <form class="formulir">
+    <form on:submit={submitForm}  class="formulir">
       <h2>Biodata</h2>
       <div class="form-group">
         <label for="nama">Nama:</label>
@@ -258,11 +253,11 @@
 
       <div class="form-group">
         <label for="hargaTotal">Harga Total:</label>
-        <input type="text" id="hargaTotal" value="Rp.{hargaTotal}" readonly />
+        <input type="text" id="hargaTotal" value="Rp.{new Intl.NumberFormat(["ban", "id"]).format(hargaTotal)}" readonly />
       </div>
 
       <div class="btn">
-        <button on:click={submitForm} type="submit" class="submit"
+        <button type="submit" class="submit"
           >Submit</button
         >
       </div>
