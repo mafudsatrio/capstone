@@ -17,6 +17,7 @@
   title="Bantu Pulihkan Bumi dengan Mengelola Sampah bersama Tracycle"
   caption="Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!"
   {image_hero}
+  link="/bank-sampah"
 />
 
 <div class="maincontent" id="maincontent">
@@ -26,13 +27,18 @@
     </div>
     <div class="deskripsi_paragraf">
       <p>
-        Tracycle adalah aplikasi berbasis web inovatif yang memfasilitasi masyarakat dalam mengelola sampah  
-        menjadi uang dengan cara yang praktis dan efisien. Melalui aplikasi Tracycle, pengguna dapat dengan  
-        mudah menukar sampah dengan uang, sambil juga mendapatkan informasi tentang cara pengolahan sampah yang 
-        benar, edukasi mengenai jenis sampah, dan informasi berguna terkait pengelolaan sampah. Kami berkomitmen untuk  
-        menciptakan lingkungan yang bersih dan sekaligus memberikan manfaat finansial kepada masyarakat melalui 
-        pengelolaan sampah yang efisien. Dengan Tracycle, Anda dapat berkontribusi dalam menjaga kebersihan lingkungan 
-        sekaligus mendapatkan manfaat ekonomi dari sampah yang Anda kelola. Bergabunglah dengan Tracycle sekarang untuk menciptakan masa depan yang lebih baik.
+        Tracycle adalah aplikasi berbasis web inovatif yang memfasilitasi
+        masyarakat dalam mengelola sampah menjadi uang dengan cara yang praktis
+        dan efisien. Melalui aplikasi Tracycle, pengguna dapat dengan mudah
+        menukar sampah dengan uang, sambil juga mendapatkan informasi tentang
+        cara pengolahan sampah yang benar, edukasi mengenai jenis sampah, dan
+        informasi berguna terkait pengelolaan sampah. Kami berkomitmen untuk
+        menciptakan lingkungan yang bersih dan sekaligus memberikan manfaat
+        finansial kepada masyarakat melalui pengelolaan sampah yang efisien.
+        Dengan Tracycle, Anda dapat berkontribusi dalam menjaga kebersihan
+        lingkungan sekaligus mendapatkan manfaat ekonomi dari sampah yang Anda
+        kelola. Bergabunglah dengan Tracycle sekarang untuk menciptakan masa
+        depan yang lebih baik.
       </p>
     </div>
   </div>
@@ -62,7 +68,8 @@
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Tinggal beritahu kami dimana saja, dan sampahmu akan segera dijemput! Tim kami siap menjemputnya di tempatmu dengan senang hati.
+            Tinggal beritahu kami dimana saja, dan sampahmu akan segera
+            dijemput! Tim kami siap menjemputnya di tempatmu dengan senang hati.
           </p>
         </div>
       </div>
@@ -73,7 +80,9 @@
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Mari konsultasikan tentang pengelolaan sampahmu! Kami siap membantu kamu mengatasi segala masalah terkait sampah dengan cepat dan praktis. 
+            Mari konsultasikan tentang pengelolaan sampahmu! Kami siap membantu
+            kamu mengatasi segala masalah terkait sampah dengan cepat dan
+            praktis.
           </p>
         </div>
       </div>
@@ -138,10 +147,13 @@
       menjadi produk yang lebih bermanfaat melalui proses daur ulang.
     </div>
     <a
-      class="exchange_button {$page.url.pathname === '/daur-ulang' ? 'active' : ''}"
+      class="exchange_button {$page.url.pathname === '/daur-ulang'
+        ? 'active'
+        : ''}"
       aria-current={$page.url.pathname === "/daur-ulang" ? "page" : undefined}
-      href="/daur-ulang">
-    Cara Daur Ulang
+      href="/daur-ulang"
+    >
+      Cara Daur Ulang
     </a>
     <img class="image_hero" src={daurUlang} alt="Hero" />
   </div>

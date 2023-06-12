@@ -16,6 +16,7 @@
   kami dan tujuan kami dalam menciptakan solusi yang bermanfaat, Anda akan semakin yakin 
   dengan apa yang kami tawarkan."
   {image_hero}
+  link="/bank-sampah"
 />
 
 <div class="maincontent" id="maincontent">
@@ -56,8 +57,13 @@
           />
         </div>
         <div class="icon_medsos-avtr">
-          <a href="https://www.instagram.com/dnaprmdi/" class="medsos"><i class="fa fa-instagram" /></a>
-          <a href="https://www.linkedin.com/in/dena-indiarto-permadi-74436126a/" class="medsos"><i class="fa fa-linkedin" /></a>
+          <a href="https://www.instagram.com/dnaprmdi/" class="medsos"
+            ><i class="fa fa-instagram" /></a
+          >
+          <a
+            href="https://www.linkedin.com/in/dena-indiarto-permadi-74436126a/"
+            class="medsos"><i class="fa fa-linkedin" /></a
+          >
         </div>
       </div>
       <div class="nama_team">
@@ -105,8 +111,13 @@
           />
         </div>
         <div class="icon_medsos-avtr">
-          <a href="https://www.instagram.com/mafudsetiono/" class="medsos"><i class="fa fa-instagram" /></a>
-          <a href="https://www.linkedin.com/in/mafud-satrio-5950a7266/" class="medsos"><i class="fa fa-linkedin" /></a>
+          <a href="https://www.instagram.com/mafudsetiono/" class="medsos"
+            ><i class="fa fa-instagram" /></a
+          >
+          <a
+            href="https://www.linkedin.com/in/mafud-satrio-5950a7266/"
+            class="medsos"><i class="fa fa-linkedin" /></a
+          >
         </div>
       </div>
       <div class="nama_team">
@@ -127,8 +138,13 @@
           />
         </div>
         <div class="icon_medsos-avtr">
-          <a href="https://www.instagram.com/agnessia23/" class="medsos"><i class="fa fa-instagram" /></a>
-          <a href="https://www.linkedin.com/in/agnes-glory-siahaan-57b654260" class="medsos"><i class="fa fa-linkedin" /></a>
+          <a href="https://www.instagram.com/agnessia23/" class="medsos"
+            ><i class="fa fa-instagram" /></a
+          >
+          <a
+            href="https://www.linkedin.com/in/agnes-glory-siahaan-57b654260"
+            class="medsos"><i class="fa fa-linkedin" /></a
+          >
         </div>
       </div>
       <div class="nama_team">
