@@ -3,6 +3,7 @@
   import contentImage from "../static/images/bank_sampah.jpeg";
   import daurUlang from "../static/images/daur_ulang.png";
   import Hero from "../components/Hero.svelte";
+  import bank from "../static/icons/Bank.png";
 </script>
 
 <svelte:head>
@@ -41,7 +42,7 @@
     </div>
     <div class="sub_layanan">
       <div class="layanan">
-        <img class="image_layanan" src={contentImage} alt="Layanan 1" />
+        <img class="image_layanan" src={bank} alt="Bank sampah" />
         <div class="layanan_title">
           <h1>Bank Sampah</h1>
         </div>
