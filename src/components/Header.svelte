@@ -16,41 +16,30 @@
       <a
         class="nav__item {$page.url.pathname === '/' ? 'active' : ''}"
         aria-current={$page.url.pathname === "/" ? "page" : undefined}
-        href="/"
-      >
-        Beranda</a
-      >
+        href="/">
+        Beranda
+        </a>
     </li>
     <li>
       <a
-        class="nav__item {$page.url.pathname === '/bank-sampah'
-          ? 'active'
-          : ''}"
-        aria-current={$page.url.pathname === "/bank-sampah"
-          ? "page"
-          : undefined}
-        href="/bank-sampah"
-      >
-        Bank Sampah</a
-      >
+        class="nav__item {$page.url.pathname === '/bank-sampah'? 'active': ''}"
+        aria-current={$page.url.pathname === "/bank-sampah"? "page": undefined}
+        href="/bank-sampah">
+        Bank Sampah</a>
     </li>
     <li>
       <a
         class="nav__item {$page.url.pathname === '/daur-ulang' ? 'active' : ''}"
         aria-current={$page.url.pathname === "/daur-ulang" ? "page" : undefined}
-        href="/daur-ulang"
-      >
-        Daur Ulang</a
-      >
+        href="/daur-ulang">
+        Daur Ulang</a>
     </li>
     <li>
       <a
         class="nav__item {$page.url.pathname === '/tentang' ? 'active' : ''}"
         aria-current={$page.url.pathname === "/tentang" ? "page" : undefined}
-        href="/tentang"
-      >
-        Tentang</a
-      >
+        href="/tentang">
+        Tentang</a>
     </li>
   </ul>
 </nav>

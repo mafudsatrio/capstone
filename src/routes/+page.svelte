@@ -1,10 +1,11 @@
 <script>
+  import { page } from "$app/stores";
   import image_hero from "../static/images/amico.png";
-  import contentImage from "../static/images/bank_sampah.jpeg";
   import daurUlang from "../static/images/daur_ulang.png";
   import Hero from "../components/Hero.svelte";
-  import bank from "../static/icons/Bank.png";
+  import bank from "../static/images/Bank.png";
   import pick from "../static/images/Pick.png";
+  import Konsultasi from "../static/images/Konsultasi.png";
 </script>
 
 <svelte:head>
@@ -66,7 +67,7 @@
         </div>
       </div>
       <div class="=layanan">
-        <img class="image_layanan" src={contentImage} alt="Layanan 3" />
+        <img class="image_layanan" src={Konsultasi} alt="Layanan 3" />
         <div class="layanan_title">
           <h1>Konsultasi Sampah</h1>
         </div>
@@ -136,7 +137,12 @@
       memberikan panduan yang dapat menginspirasi Anda untuk mengubah sampah
       menjadi produk yang lebih bermanfaat melalui proses daur ulang.
     </div>
-    <button class="exchange_button">Cara Daur Ulang</button>
+    <a
+      class="exchange_button {$page.url.pathname === '/daur-ulang' ? 'active' : ''}"
+      aria-current={$page.url.pathname === "/daur-ulang" ? "page" : undefined}
+      href="/daur-ulang">
+    Cara Daur Ulang
+    </a>
     <img class="image_hero" src={daurUlang} alt="Hero" />
   </div>
 </div>
