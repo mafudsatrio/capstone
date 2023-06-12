@@ -32,7 +32,7 @@ main {
 }
 
 hr {
-    width: 100px;
+    width: 200px;
     height: 5px;
     color: #395220;
     text-align: center;
@@ -325,7 +325,7 @@ hr {
 }
 
 .sub_layanan_title {
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     font-size: 15px;
     color: #395220;
