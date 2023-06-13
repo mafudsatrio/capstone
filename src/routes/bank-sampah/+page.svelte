@@ -92,17 +92,17 @@
       </div>
       <div class="item5">
         <img
-          src="/src/static/icons/gelas.png"
-          alt="Gelas"
+          src="/src/static/icons/botolkaca.png"
+          alt="Botol"
           width="100px"
           height="100px"
         />
-        GELAS
+        BOTOL KACA
       </div>
       <div class="item6">
         <img
           src="/src/static/icons/kardus.png"
-          alt="Kayu"
+          alt="Kardus"
           width="100px"
           height="100px"
         />
@@ -112,7 +112,7 @@
   </div>
 
   <div class="layanan_container">
-    <div class="layanan_title">
+    <div class="sub_layanan_title">
       <h1>Cara Tukar Sampah</h1>
       <hr />
     </div>
@@ -120,7 +120,7 @@
       <div class="layanan">
         <p class="tukar">1</p>
         <div class="sub_layanan_title">
-          <h1>Kategorikan sampah</h1>
+          <h1>Kategorikan Sampah Anda</h1>
         </div>
         <div class="deskripsi_layanan">
           <p>
