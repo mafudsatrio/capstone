@@ -151,25 +151,24 @@
       <div class="half_container">
         <div class="top">
           <div class="daur-ulang_icon">
-            <img class="icon" src="/src/static/icons/kaca.png" alt="botol" />
+            <img class="icon" src="/src/static/icons/kaleng_white.png" alt="botol" />
           </div>
         </div>
         <div class="bottom">
           <div class="nama-item_daur-ulang">
-            <p>Gelas/Piring</p>
+            <p>Kaleng</p>
           </div>
         </div>
       </div>
       <div class="daur-ulang_deskripsi">
         <div class="desc_title">
-          <h1>Gelas/Piring</h1>
+          <h1>Kaleng</h1>
         </div>
         <div class="desc">
           <p>
-            Daur ulang gelas atau piring dapat dilakukan dengan cara memisahkan
-            bahan kaca atau porselen dari bagian non-recyclable, seperti label
-            atau tutup plastik, lalu menghancurkan dan melelehkan bahan tersebut
-            untuk membentuk bahan baru.
+            Kaleng bekas dikumpulkan dan dibersihkan. Kemudian, kaleng dipadatkan dan dihancurkan 
+            menjadi serpihan kecil. Serpihan logam dipisahkan dan dikirim ke pabrik pemrosesan 
+            logam untuk dilebur menjadi bahan baru.
           </p>
         </div>
       </div>
@@ -179,25 +178,24 @@
       <div class="half_container">
         <div class="top">
           <div class="daur-ulang_icon">
-            <img class="icon" src="/src/static/icons/Wood.png" alt="kayu" />
+            <img class="icon" src="/src/static/icons/kardus_white.png" alt="kayu" />
           </div>
         </div>
         <div class="bottom">
           <div class="nama-item_daur-ulang">
-            <p>Kayu</p>
+            <p>Kardus</p>
           </div>
         </div>
       </div>
       <div class="daur-ulang_deskripsi">
         <div class="desc_title">
-          <h1>Kayu</h1>
+          <h1>Kardus</h1>
         </div>
         <div class="desc">
           <p>
-            Dalam daur ulang kayu, kayu bekas seperti palet atau limbah
-            konstruksi diolah menjadi serat kayu atau bubur kayu. Kemudian,
-            serat kayu ini dapat digunakan untuk membuat papan partikel, papan
-            serat, atau bahan bakar biomassa.
+            Daur ulang kardus melibatkan mengumpulkan kardus bekas, membersihkannya, menghancurkannya, 
+            dan mengubahnya menjadi lembaran kertas baru yang dapat digunakan kembali. Hal ini membantu 
+            mengurangi penggunaan sumber daya alam dan limbah.
           </p>
         </div>
       </div>
