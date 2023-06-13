@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+  // @ts-nocheck
 
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
@@ -13,13 +13,13 @@
   let hargaTotal = 0;
   let hargaPerKilo = 0;
   const SAMPAH = {
-    'plastik': 1000,
-    'kertas': 1500,
-    'logam': 2000,
-    'kaca': 2500,
-    'kaleng': 3000,
-    'kardus': 3500,
-  }
+    plastik: 1000,
+    kertas: 1500,
+    logam: 2000,
+    kaca: 2500,
+    kaleng: 3000,
+    kardus: 3500,
+  };
 
   $: {
     hargaPerKilo = SAMPAH[jenisSampah] ?? 0;
@@ -27,9 +27,15 @@
   }
 
   async function submitForm(event) {
-    const formData = new FormData(event.target); 
-    const obj = Object.fromEntries(Array.from(formData.keys()).map(key => [key, formData.getAll(key).length > 1 ? formData.getAll(key) : formData.get(key)]))
-
+    const formData = new FormData(event.target);
+    const obj = Object.fromEntries(
+      Array.from(formData.keys()).map((key) => [
+        key,
+        formData.getAll(key).length > 1
+          ? formData.getAll(key)
+          : formData.get(key),
+      ])
+    );
 
     await postTransaksi({
       nama: obj.nama,
@@ -38,20 +44,19 @@
       email: obj.email,
       jenisSampah: jenisSampah,
       beratSampah: beratSampah,
-      hargaTotal: hargaTotal,
     })
       .then(async (res) => {
         console.log(res.data.payload.data._id);
         alert("Berhasil mengirim formulir");
 
         const pdf = await createPDF(res.data.payload.data._id);
-        const url = import.meta.env.VITE_API_URL ?? "http://localhost:3000"
-        window.open(url + pdf.data.payload.data, '_blank').focus();
+        const url = import.meta.env.VITE_API_URL ?? "http://localhost:3000";
+        window.open(url + pdf.data.payload.data, "_blank").focus();
       })
       .catch((err) => {
-        console.log(err)
+        console.log(err);
         alert("Gagal mengirim formulir");
-    })
+      });
   }
 </script>
 
@@ -70,7 +75,7 @@
 <div class="maincontent" id="maincontent">
   <div class="layanan_container">
     <div class="layanan_title">
-      <h1>Jenis Sampah </h1>
+      <h1>Jenis Sampah</h1>
       <hr />
       <p>Sampah yang dapat anda tukarkan di Tracycle</p>
     </div>
@@ -215,7 +220,7 @@
   </div>
 
   <div class="formulir" id="formulir">
-    <form on:submit|preventDefault={submitForm}  class="formulir">
+    <form on:submit|preventDefault={submitForm} class="formulir">
       <h2>Biodata</h2>
       <div class="form-group">
         <label for="nama">Nama:</label>
@@ -275,13 +280,16 @@
 
       <div class="form-group">
         <label for="hargaTotal">Harga Total:</label>
-        <input type="text" id="hargaTotal" value="Rp.{new Intl.NumberFormat(["ban", "id"]).format(hargaTotal)}" readonly />
+        <input
+          type="text"
+          id="hargaTotal"
+          value="Rp.{new Intl.NumberFormat(['ban', 'id']).format(hargaTotal)}"
+          readonly
+        />
       </div>
 
       <div class="btn">
-        <button type="submit" class="submit"
-          >Submit</button
-        >
+        <button type="submit" class="submit">Submit</button>
       </div>
     </form>
   </div>
