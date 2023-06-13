@@ -86,7 +86,9 @@
     <div class="layanan_title">
       <h1>Jenis Sampah</h1>
       <hr />
+      <div class="jenis_sampah_desc">
       <p>Sampah yang dapat anda tukarkan di Tracycle</p>
+    </div>
     </div>
     <div class="grid-container">
       <div class="item1">

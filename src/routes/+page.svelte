@@ -62,8 +62,8 @@
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            voluptas at? Nulla quis consectetur eveniet architecto
+            Di Tracycle, Anda dapat meraih manfaat luar biasa dengan "menabung" sampah! Tukarkan 
+            sampah Anda  dan dapatkan beragam keuntungan yang kami tawarkan.
           </p>
         </div>
       </div>
