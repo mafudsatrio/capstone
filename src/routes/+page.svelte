@@ -7,16 +7,13 @@
   import pick from "../static/images/Pick.png";
   import Konsultasi from "../static/images/Konsultasi.png";
   import { onMount } from 'svelte';
+  
 
-onMount(() => {
-  const icon = document.createElement('link');
-  icon.rel = 'icon';
-  icon.href = '../static/logo/Tracycle_logo.png';
-  document.head.appendChild(icon);
-});
+
 </script>
 
 <svelte:head>
+  
   <title>Tracycle - Home</title>
   <meta name="description" content="Svelte demo app" />
 
