@@ -27,27 +27,39 @@
       <div class="deskripsi_konsul">
         <h1>Ayo konsultasikan dengan kami</h1>
         <ul>
-            <p class="con">   Ajukan pertanyaan apa pun atau hanya sapa saja</p>
-            <p class="con"><img class="logo-konsul" src={phone} alt="Logo HandPhone" />0812-2345-4567</p>
-            <p><img class="logo-konsul" src={email} alt="Logo HandPhone" />tracycleforearth@gmail.com</p>
+          <p class="con">Ajukan pertanyaan apa pun atau hanya sapa saja</p>
+          <p class="con">
+            <img
+              class="logo-konsul"
+              src={phone}
+              alt="Logo HandPhone"
+            />0812-2345-4567
+          </p>
+          <p>
+            <img
+              class="logo-konsul"
+              src={email}
+              alt="Logo HandPhone"
+            />tracycleforearth@gmail.com
+          </p>
         </ul>
       </div>
       <div class="formulir-konsul" id="formulir-konsul">
         <form class="formulir-konsul">
           <div class="form-group">
-          <label class="label_form" for="nama">Nama:</label>
-          <input type="text" id="nama" name="nama" required />
-        </div>
-        <div class="form-group">
-          <label class="label_form" for="email">Email:</label>
-          <input type="text" id="email" name="Email" required />
-        </div>
-        <div class="form-group">
-          <label class="label_form" for="Message">Message:</label>
-          <input type="Message" id="Message" name="Message" required />
-        </div>
-      </form>
+            <label class="label_form" for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required />
+          </div>
+          <div class="form-group">
+            <label class="label_form" for="email">Email:</label>
+            <input type="text" id="email" name="Email" required />
+          </div>
+          <div class="form-group">
+            <label class="label_form" for="Message">Message:</label>
+            <input type="Message" id="Message" name="Message" required />
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
   </div>
 </div>
