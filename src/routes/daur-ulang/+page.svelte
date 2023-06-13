@@ -17,7 +17,12 @@
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<Hero {title} {caption} {image_hero} link="/bank-sampah" />
+<Hero
+  title="Cari Tau Cara Daur Ulang Sampah"
+  caption="Ayo ikut berkontribusi bersama Tracycle dalam usaha menjaga kelestarian bumi dengan mengelola sampah. Bergabunglah dengan kami untuk menciptakan lingkungan yang bersih dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!"
+  {image_hero}
+  link="/bank-sampah"
+/>
 
 <div class="maincontent" id="maincontent">
   <div class="layanan_container">
@@ -172,9 +177,10 @@
         </div>
         <div class="desc">
           <p>
-            Kaleng bekas dikumpulkan dan dibersihkan. Kemudian, kaleng dipadatkan dan dihancurkan 
-            menjadi serpihan kecil. Serpihan logam dipisahkan dan dikirim ke pabrik pemrosesan 
-            logam untuk dilebur menjadi bahan baru.
+            Kaleng bekas dikumpulkan dan dibersihkan. Kemudian, kaleng
+            dipadatkan dan dihancurkan menjadi serpihan kecil. Serpihan logam
+            dipisahkan dan dikirim ke pabrik pemrosesan logam untuk dilebur
+            menjadi bahan baru.
           </p>
         </div>
       </div>
@@ -199,8 +205,9 @@
         </div>
         <div class="desc">
           <p>
-            Daur ulang kardus melibatkan mengumpulkan kardus bekas, membersihkannya, menghancurkannya, 
-            dan mengubahnya menjadi lembaran kertas baru yang dapat digunakan kembali. Hal ini membantu 
+            Daur ulang kardus melibatkan mengumpulkan kardus bekas,
+            membersihkannya, menghancurkannya, dan mengubahnya menjadi lembaran
+            kertas baru yang dapat digunakan kembali. Hal ini membantu
             mengurangi penggunaan sumber daya alam dan limbah.
           </p>
         </div>

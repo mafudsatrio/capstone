@@ -63,7 +63,6 @@ hr {
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
   margin-left: 15px;
 }
@@ -305,26 +304,19 @@ hr {
 }
 
 .konsul_container {
-  display: flex;
   background-color: #4c7031;
   border-radius: 10px;
-  text-align: left;
   color: #ffffff;
-  padding-top: 10px;
-  padding-right: 100px;
-  padding-bottom: 50px;
-  max-width: 100%;
-  margin: 50px auto 50px auto;
+  padding: 75px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .con {
   margin-top: 25px;
   width: 328px;
-}
-.deskripsi_konsul {
-  margin-top: 50px;
-  margin-left: 50px;
-  width: 70%;
 }
 .label_form {
   color: #ffffff;
@@ -639,6 +631,12 @@ footer {
   width: 100%;
 }
 
+.input-konsul{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+}
+
 .formulir {
   max-width: 100%;
   margin: 0 auto;
@@ -649,9 +647,10 @@ footer {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .formulir-konsul {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 20px;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  
 }
 .formulir-konsul h2 {
   text-align: center;
@@ -674,11 +673,19 @@ label {
   color: #10110e;
 }
 
-input[type='text'],
-input[type='tel'],
-input[type='email'],
-input[type='number'],
-input[type='Message'],
+.input_feedback {
+  border-top: none;
+  border-left:none;
+  border-right: none;
+  border-bottom:rgb(255, 255, 255) 3px solid;
+  border-radius: 0px;
+  font-family: 'Ubuntu';
+  color: white;
+  background-color: #4c7031;
+  width: 100%
+}
+
+.formulir .form-group input,
 select {
   width: 100%;
   padding: 10px;

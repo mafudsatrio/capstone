@@ -18,36 +18,66 @@
 <div class="maincontent" id="maincontent">
   <div class="layanan_container">
     <div class="layanan_title">
-      <h1>Formulir Pengisian Biodata Tracycle</h1>
+      <h1>Berikan Feedback untuk Kami</h1>
       <hr />
     </div>
-  </div>
-  <div class="konsul_container">
-    <div class="deskripsi_paragraf">
+    <div class="konsul_container">
       <div class="deskripsi_konsul">
         <h1>Ayo konsultasikan dengan kami</h1>
         <ul>
-            <p class="con">   Ajukan pertanyaan apa pun atau hanya sapa saja</p>
-            <p class="con"><img class="logo-konsul" src={phone} alt="Logo HandPhone" />0812-2345-4567</p>
-            <p><img class="logo-konsul" src={email} alt="Logo HandPhone" />tracycleforearth@gmail.com</p>
+          <p class="con">Ajukan pertanyaan apa pun atau hanya sapa saja</p>
+          <p class="con">
+            <img
+              class="logo-konsul"
+              src={phone}
+              alt="Logo HandPhone"
+            />0812-2345-4567
+          </p>
+          <p>
+            <img
+              class="logo-konsul"
+              src={email}
+              alt="Logo HandPhone"
+            />tracycleforearth@gmail.com
+          </p>
         </ul>
       </div>
       <div class="formulir-konsul" id="formulir-konsul">
-        <form class="formulir-konsul">
+        <form>
+          <div class="input-konsul">
+            <div class="form-group">
+              <label class="label_form" for="nama">Nama:</label>
+              <input
+                class="input_feedback"
+                type="text"
+                id="nama"
+                name="nama"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="label_form" for="email">Email:</label>
+              <input
+                class="input_feedback"
+                type="text"
+                id="email"
+                name="Email"
+                required
+              />
+            </div>
+          </div>
           <div class="form-group">
-          <label class="label_form" for="nama">Nama:</label>
-          <input type="text" id="nama" name="nama" required />
-        </div>
-        <div class="form-group">
-          <label class="label_form" for="email">Email:</label>
-          <input type="text" id="email" name="Email" required />
-        </div>
-        <div class="form-group">
-          <label class="label_form" for="Message">Message:</label>
-          <input type="Message" id="Message" name="Message" required />
-        </div>
-      </form>
+            <label class="label_form" for="Message">Message:</label>
+            <input
+              class="input_feedback"
+              type="text"
+              id="Message"
+              name="Message"
+              required
+            />
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
   </div>
 </div>

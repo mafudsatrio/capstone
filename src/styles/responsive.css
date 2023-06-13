@@ -69,11 +69,6 @@
     display: grid;
     grid-template-columns: auto auto auto;
   }
-  .formulir-konsul {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
-  }
   .hamburger {
     display: none;
   }
@@ -127,6 +122,12 @@
     text-align: center;
     margin-bottom: 20px;
   }
+  .header{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
   .header li a {
     margin-left: 0;
   }
@@ -146,6 +147,11 @@
   .deskripsi_container {
     padding: 15px;
   }
+  .konsul_container, .input-konsul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+ 
 }
 
 @media (min-width: 768px) {
