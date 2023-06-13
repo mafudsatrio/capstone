@@ -73,7 +73,10 @@
 
 <Hero
   title="Tukarkan Sampahmu di Tracycle"
-  caption="Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!"
+  caption="Tracycle memungkinkan Anda menukarkan sampah dengan manfaat bernilai. Kumpulkan sampah, 
+  tukarkan dengan poin, dan dapatkan diskon atau voucher belanja. Sambil berkontribusi pada kebersihan 
+  lingkungan, Anda juga mendapatkan manfaat langsung. Bergabunglah dengan Tracycle dan dukung kelestarian 
+  lingkungan melalui penukaran sampah yang bermanfaat."
   {image_hero}
   link="#formulir"
 />
@@ -153,24 +156,23 @@
       <div class="layanan">
         <p class="tukar">1</p>
         <div class="sub_layanan_title">
-          <h1>Kategorikan Sampah Anda</h1>
+          <h1>Pisahkan  Sampah Anda</h1>
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Kategorikan sampah sesuai dengan jenisnya dan bedakan tempat tiap
-            kategori sampah
+            Pisahkan sampah berdasarkan jenisnya dan tentukan lokasi yang 
+            berbeda untuk setiap kategori sampah tersebut.
           </p>
         </div>
       </div>
       <div class="layanan">
         <p class="tukar">2</p>
         <div class="sub_layanan_title">
-          <h1>Hitung Berat Sampah</h1>
+          <h1>Timbang Berat Sampah</h1>
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Hitung berat sampah yang akan ditukarkan atau kamu bisa
-            memperkirakan berat sampah yang akan ditukar
+            Lakukan estimasi berat sampah yang akan ditukarkan atau hitung beratnya secara akurat.
           </p>
         </div>
       </div>
@@ -181,8 +183,7 @@
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Kamu dapat mengisi form yang sudah kami siapkan. Kamu harus mengisi
-            alamat penjemputan dan data sampah.
+            Isilah formulir dengan alamat penjemputan dan informasi sampah yang diminta.
           </p>
         </div>
       </div>
@@ -193,32 +194,31 @@
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Tunggu tim kami penjemputan sampah yang akan dilakukan tim kami.
+            Mohon bersabar menunggu kedatangan tim kami untuk proses penjemputan sampah.
           </p>
         </div>
       </div>
       <div class="layanan">
         <p class="tukar">5</p>
         <div class="sub_layanan_title">
-          <h1>Tunggu Penjemputan</h1>
+          <h1>Periksa Hasil Pengukuran</h1>
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Kamu dapat mengecek keseuaian timbangan sampah yang akan dilakukan
-            tim kami. Pengecekan ini bertujuan untuk memberikan transparasi
-            pengukuran.
+            Lakukan pengecekan  timbangan kembali. Pengecekan dilakukan untuk menjaga 
+            transparansi dalam proses pengukuran.
           </p>
         </div>
       </div>
       <div class="layanan">
         <p class="tukar">6</p>
         <div class="sub_layanan_title">
-          <h1>Tunggu Penjemputan</h1>
+          <h1>Proses Pembayaran Sampah</h1>
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Setelah penjemputan dan pengukuran selesai, kamu dapat menunggu
-            pembayaran yang otomatis masuk ke rekning kamu.
+            Setelah penjemputan dan pengukuran selesai, kamu dapat menerima hasil
+            pembayaran dari sampahmu secara langsung yang diberikan oleh tim Tracycle.
           </p>
         </div>
       </div>
