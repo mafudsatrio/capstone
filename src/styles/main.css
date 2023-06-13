@@ -631,10 +631,10 @@ footer {
   width: 100%;
 }
 
-.input-konsul{
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 10px;
+.input-konsul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .formulir {
@@ -650,7 +650,6 @@ gap: 10px;
   width: 100%;
   margin: auto;
   padding: 10px;
-  
 }
 .formulir-konsul h2 {
   text-align: center;
@@ -675,14 +674,13 @@ label {
 
 .input_feedback {
   border-top: none;
-  border-left:none;
+  border-left: none;
   border-right: none;
-  border-bottom:rgb(255, 255, 255) 3px solid;
+  border-bottom: rgb(255, 255, 255) 3px solid;
   border-radius: 0px;
   font-family: 'Ubuntu';
   color: white;
   background-color: #4c7031;
-  width: 100%
 }
 
 .formulir .form-group input,

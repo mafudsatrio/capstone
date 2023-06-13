@@ -52,6 +52,20 @@
   .card_daur_ulang {
     grid-template-columns: 1fr;
   }
+  .konsul_container,
+  .input-konsul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 320px) {
+  /* Ubah ukuran padding saat lebar layar maksimum 480px */
+  .konsul_container {
+    padding: 20px;
+  }
+  .con {
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -104,6 +118,9 @@
     font-size: 15px;
     line-height: 30px;
   }
+  .con {
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -122,7 +139,7 @@
     text-align: center;
     margin-bottom: 20px;
   }
-  .header{
+  .header {
     padding-left: 7px;
     padding-right: 7px;
     padding-top: 5px;
@@ -147,11 +164,11 @@
   .deskripsi_container {
     padding: 15px;
   }
-  .konsul_container, .input-konsul {
+  .konsul_container,
+  .input-konsul {
     display: grid;
     grid-template-columns: 1fr;
   }
- 
 }
 
 @media (min-width: 768px) {
