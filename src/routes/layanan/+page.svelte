@@ -18,12 +18,10 @@
 <div class="maincontent" id="maincontent">
   <div class="layanan_container">
     <div class="layanan_title">
-      <h1>Formulir Pengisian Biodata Tracycle</h1>
+      <h1>Berikan Feedback untuk Kami</h1>
       <hr />
     </div>
-  </div>
-  <div class="konsul_container">
-    <div class="deskripsi_paragraf">
+    <div class="konsul_container">
       <div class="deskripsi_konsul">
         <h1>Ayo konsultasikan dengan kami</h1>
         <ul>
@@ -45,18 +43,20 @@
         </ul>
       </div>
       <div class="formulir-konsul" id="formulir-konsul">
-        <form class="formulir-konsul">
-          <div class="form-group">
-            <label class="label_form" for="nama">Nama:</label>
-            <input type="text" id="nama" name="nama" required />
-          </div>
-          <div class="form-group">
-            <label class="label_form" for="email">Email:</label>
-            <input type="text" id="email" name="Email" required />
+        <form>
+          <div class="input-konsul">
+            <div class="form-group">
+              <label class="label_form" for="nama">Nama:</label>
+              <input type="text" id="nama" name="nama" required />
+            </div>
+            <div class="form-group">
+              <label class="label_form" for="email">Email:</label>
+              <input type="text" id="email" name="Email" required />
+            </div>
           </div>
           <div class="form-group">
             <label class="label_form" for="Message">Message:</label>
-            <input type="Message" id="Message" name="Message" required />
+            <input type="text" id="Message" name="Message" required />
           </div>
         </form>
       </div>

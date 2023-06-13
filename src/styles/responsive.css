@@ -69,11 +69,6 @@
     display: grid;
     grid-template-columns: auto auto auto;
   }
-  .formulir-konsul {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 50px;
-  }
   .hamburger {
     display: none;
   }

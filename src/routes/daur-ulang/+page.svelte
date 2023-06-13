@@ -1,9 +1,6 @@
 <script>
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
-  let title = "Tukarkan Sampahmu di Tracycle";
-  let caption =
-    "Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!";
 </script>
 
 <svelte:head>
@@ -11,7 +8,12 @@
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<Hero {title} {caption} {image_hero} link="/bank-sampah" />
+<Hero
+  title="Cari Tau Cara Daur Ulang Sampah"
+  caption="Ayo ikut berkontribusi bersama Tracycle dalam usaha menjaga kelestarian bumi dengan mengelola sampah. Bergabunglah dengan kami untuk menciptakan lingkungan yang bersih dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!"
+  {image_hero}
+  link="/bank-sampah"
+/>
 
 <div class="maincontent" id="maincontent">
   <div class="layanan_container">
@@ -151,7 +153,11 @@
       <div class="half_container">
         <div class="top">
           <div class="daur-ulang_icon">
-            <img class="icon" src="/src/static/icons/kaleng_white.png" alt="botol" />
+            <img
+              class="icon"
+              src="/src/static/icons/kaleng_white.png"
+              alt="botol"
+            />
           </div>
         </div>
         <div class="bottom">
@@ -166,9 +172,10 @@
         </div>
         <div class="desc">
           <p>
-            Kaleng bekas dikumpulkan dan dibersihkan. Kemudian, kaleng dipadatkan dan dihancurkan 
-            menjadi serpihan kecil. Serpihan logam dipisahkan dan dikirim ke pabrik pemrosesan 
-            logam untuk dilebur menjadi bahan baru.
+            Kaleng bekas dikumpulkan dan dibersihkan. Kemudian, kaleng
+            dipadatkan dan dihancurkan menjadi serpihan kecil. Serpihan logam
+            dipisahkan dan dikirim ke pabrik pemrosesan logam untuk dilebur
+            menjadi bahan baru.
           </p>
         </div>
       </div>
@@ -178,7 +185,11 @@
       <div class="half_container">
         <div class="top">
           <div class="daur-ulang_icon">
-            <img class="icon" src="/src/static/icons/kardus_white.png" alt="kayu" />
+            <img
+              class="icon"
+              src="/src/static/icons/kardus_white.png"
+              alt="kayu"
+            />
           </div>
         </div>
         <div class="bottom">
@@ -193,8 +204,9 @@
         </div>
         <div class="desc">
           <p>
-            Daur ulang kardus melibatkan mengumpulkan kardus bekas, membersihkannya, menghancurkannya, 
-            dan mengubahnya menjadi lembaran kertas baru yang dapat digunakan kembali. Hal ini membantu 
+            Daur ulang kardus melibatkan mengumpulkan kardus bekas,
+            membersihkannya, menghancurkannya, dan mengubahnya menjadi lembaran
+            kertas baru yang dapat digunakan kembali. Hal ini membantu
             mengurangi penggunaan sumber daya alam dan limbah.
           </p>
         </div>
