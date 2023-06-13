@@ -5,6 +5,12 @@
   import image_hero from "/src/static/images/daur_ulang.png";
   import { createEventDispatcher } from "svelte";
   import { postTransaksi, createPDF } from "../../utils/api.js";
+  import image_plastik from "/src/static/icons/plastic.png";
+  import image_kertas from "/src/static/icons/kertas.png";
+  import image_kardus from "/src/static/icons/kardus.png";
+  import image_logam from "/src/static/icons/metal.png";
+  import image_kaca from "/src/static/icons/botolkaca.png";
+  import image_kaleng from "/src/static/icons/kaleng.png";
 
   const dispatch = createEventDispatcher();
 
@@ -82,7 +88,7 @@
     <div class="grid-container">
       <div class="item1">
         <img
-          src="/src/static/icons/plastic.png"
+          src={image_plastik}
           alt="botol plastik"
           width="100px"
           height="100px"
@@ -91,7 +97,7 @@
       </div>
       <div class="item2">
         <img
-          src="/src/static/icons/kertas.png"
+          src={image_kertas}
           alt="kertas"
           width="100px"
           height="100px"
@@ -100,7 +106,7 @@
       </div>
       <div class="item3">
         <img
-          src="/src/static/icons/botolkaca.png"
+          src="{image_kaca}"
           alt="Botol"
           width="100px"
           height="100px"
@@ -110,7 +116,7 @@
 
       <div class="item4">
         <img
-          src="/src/static/icons/metal.png"
+          src={image_logam}
           alt="Besi"
           width="100px"
           height="100px"
@@ -119,7 +125,7 @@
       </div>
       <div class="item5">
         <img
-          src="/src/static/icons/kaleng.png"
+          src={image_kaleng}
           alt="botol kaca"
           width="100px"
           height="100px"
@@ -128,7 +134,7 @@
       </div>
       <div class="item6">
         <img
-          src="/src/static/icons/kardus.png"
+          src={image_kardus}
           alt="Kardus"
           width="100px"
           height="100px"

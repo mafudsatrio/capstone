@@ -1,6 +1,10 @@
 <script>
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/image_page.png";
+  import avatar_1 from "/src/static/icons/avatar_1.png";
+  import avatar_2 from "/src/static/icons/avatar_2.png";
+  import avatar_3 from "/src/static/icons/avatar_3.png";
+  import avatar_4 from "/src/static/icons/avatar_4.png";
 </script>
 
 <svelte:head>
@@ -52,7 +56,7 @@
         <div class="team_image">
           <img
             class="icon_team"
-            src="/src/static/icons/avatar_1.png"
+            src={avatar_1}
             alt="Team Icon"
           />
         </div>
@@ -79,7 +83,7 @@
         <div class="team_image">
           <img
             class="icon_team"
-            src="/src/static/icons/avatar_2.png"
+            src={avatar_2}
             alt="Team Icon"
           />
         </div>
@@ -106,7 +110,7 @@
         <div class="team_image">
           <img
             class="icon_team"
-            src="/src/static/icons/avatar_3.png"
+            src={avatar_3}
             alt="Team Icon"
           />
         </div>
@@ -133,7 +137,7 @@
         <div class="team_image">
           <img
             class="icon_team"
-            src="/src/static/icons/avatar_4.png"
+            src={avatar_4}
             alt="Team Icon"
           />
         </div>

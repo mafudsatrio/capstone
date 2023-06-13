@@ -1,6 +1,15 @@
 <script>
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
+  import image_plastik from "/src/static/icons/plastik.png";
+  import image_kertas from "/src/static/icons/kertas_white.png";
+  import image_botol from "/src/static/icons/Cola.png";
+  import image_besi from "/src/static/icons/besi.png";
+  import image_kaleng from "/src/static/icons/kaleng_white.png";
+  import image_kardus from "/src/static/icons/kardus_white.png";
+  let title = "Tukarkan Sampahmu di Tracycle";
+  let caption =
+    "Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!";
 </script>
 
 <svelte:head>
@@ -33,7 +42,7 @@
       <div class="half_container">
         <div class="top">
           <div class="daur-ulang_icon">
-            <img class="icon" src="/src/static/icons/plastik.png" alt="botol" />
+            <img class="icon" src={image_plastik} alt="botol" />
           </div>
         </div>
         <div class="bottom">
@@ -64,7 +73,7 @@
           <div class="daur-ulang_icon">
             <img
               class="icon"
-              src="/src/static/icons/kertas_white.png"
+              src={image_kertas}
               alt="botol"
             />
           </div>
@@ -95,7 +104,7 @@
       <div class="half_container">
         <div class="top">
           <div class="daur-ulang_icon">
-            <img class="icon" src="/src/static/icons/Cola.png" alt="botol" />
+            <img class="icon" src={image_botol} alt="botol" />
           </div>
         </div>
         <div class="bottom">
@@ -123,7 +132,7 @@
       <div class="half_container">
         <div class="top">
           <div class="daur-ulang_icon">
-            <img class="icon" src="/src/static/icons/besi.png" alt="besi" />
+            <img class="icon" src={image_besi} alt="besi" />
           </div>
         </div>
         <div class="bottom">
@@ -153,11 +162,7 @@
       <div class="half_container">
         <div class="top">
           <div class="daur-ulang_icon">
-            <img
-              class="icon"
-              src="/src/static/icons/kaleng_white.png"
-              alt="botol"
-            />
+            <img class="icon" src={image_kaleng} alt="botol" />
           </div>
         </div>
         <div class="bottom">
@@ -185,11 +190,7 @@
       <div class="half_container">
         <div class="top">
           <div class="daur-ulang_icon">
-            <img
-              class="icon"
-              src="/src/static/icons/kardus_white.png"
-              alt="kayu"
-            />
+            <img class="icon" src={image_kardus} alt="kayu" />
           </div>
         </div>
         <div class="bottom">
