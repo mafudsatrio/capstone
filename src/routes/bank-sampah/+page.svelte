@@ -61,7 +61,7 @@
           width="100px"
           height="100px"
         />
-        PLASTIK
+        Plastik
       </div>
       <div class="item2">
         <img
@@ -70,17 +70,18 @@
           width="100px"
           height="100px"
         />
-        KERTAS
+        Kertas
       </div>
       <div class="item3">
         <img
-          src="/src/static/icons/kaleng.png"
-          alt="botol kaca"
+          src="/src/static/icons/botolkaca.png"
+          alt="Botol"
           width="100px"
           height="100px"
         />
-        KALENG
+        Botol Kaca
       </div>
+
       <div class="item4">
         <img
           src="/src/static/icons/metal.png"
@@ -88,16 +89,16 @@
           width="100px"
           height="100px"
         />
-        BESI
+        Besi
       </div>
       <div class="item5">
         <img
-          src="/src/static/icons/botolkaca.png"
-          alt="Botol"
+          src="/src/static/icons/kaleng.png"
+          alt="botol kaca"
           width="100px"
           height="100px"
         />
-        BOTOL KACA
+        Kaleng
       </div>
       <div class="item6">
         <img
@@ -106,7 +107,7 @@
           width="100px"
           height="100px"
         />
-        KARDUS
+        Kardus
       </div>
     </div>
   </div>
