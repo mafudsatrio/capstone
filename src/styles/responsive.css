@@ -1,179 +1,178 @@
 @media screen and (max-width: 599px) {
-    nav {
-        z-index: 10;
-        background-color: #ffffff;
-        width: 100%;
-        position: absolute;
-        /* This trasform moves the drawer off canvas. */
-        -webkit-transform: translate(-1000px, 0);
-        transform: translate(-1000px, 0);
-        /* Optionally, we animate the drawer. */
-        transition: transform 0.5s ease;
-    }
-    .open {
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0);
-    }
-    .nav__item {
-        display: list-item;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-    .list-item__description {
-        font-size: 16px;
-    }
-    .container {
-        padding: 20px;
-    }
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .grid-container {
-        grid-template-columns: 2fr 2fr;
-    }
-    .card_daur_ulang {
-        grid-template-columns: 1fr;
-    }
+  nav {
+    z-index: 10;
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-1000px, 0);
+    transform: translate(-1000px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.5s ease;
+  }
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .list-item__description {
+    font-size: 16px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .grid-container {
+    grid-template-columns: 2fr 2fr;
+  }
+  .card_daur_ulang {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (min-width: 800px) {
-    .sub_layanan {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 25px;
-    }
-    .footer-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 100px;
-    }
-    .deskripsi_paragraf {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 100px;
-    }
-    .formulir-konsul {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 50px;
-    }
-    .hamburger {
-        display: none;
-    }
+  .sub_layanan {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+  }
+  .deskripsi_paragraf {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .formulir-konsul {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+  }
+  .hamburger {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .image_hero {
-        display: none;
-    }
-    .container {
-        grid-template-columns: auto;
-    }
+  .image_hero {
+    display: none;
+  }
+  .container {
+    grid-template-columns: auto;
+  }
 }
 
 @media screen and (max-width: 999px) {
-    .team_container {
-        grid-template-columns: 1fr 1fr;
-    }
+  .team_container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 799px) {
-    .hero_title,
-    .hero_subtitle,
-    .exchange_button {
-        width: 100%;
-        text-align: center;
-        margin: auto;
-    }
-    .deskripsi_footer {
-        text-align: center;
-    }
-    .hero_title {
-        font-size: 15px;
-        line-height: 30px;
-    }
+  .hero_title,
+  .hero_subtitle,
+  .exchange_button {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .deskripsi_footer {
+    text-align: center;
+  }
+  .hero_title {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    .maincontent {
-        max-width: 1200px;
-        margin: auto;
-    }
+  .maincontent {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 768px) {
-    .footer-content,
-    .social-media,
-    .footer-links,
-    .social-icon {
-        flex-basis: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .header li a {
-        margin-left: 0;
-    }
-    .container {
-        padding-top: 80px;
-    }
-    .team_container {
-        grid-template-columns: 1fr;
-    }
-    .footer-container {
-        padding: 5px;
-    }
-    .deskripsi_footer,
-    .copyright {
-        width: 100%;
-    }
-    .deskripsi_container {
-        padding: 15px;
-    }
+  .footer-content,
+  .social-media,
+  .footer-links,
+  .social-icon {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header li a {
+    margin-left: 0;
+  }
+  .container {
+    padding-top: 80px;
+  }
+  .team_container {
+    grid-template-columns: 1fr;
+  }
+  .footer-container {
+    padding: 5px;
+  }
+  .deskripsi_footer,
+  .copyright {
+    width: 100%;
+  }
+  .deskripsi_container {
+    padding: 15px;
+  }
 }
 
 @media (min-width: 768px) {
-    .header li {
-        float: left;
-    }
-    .header li a {
-        padding: 20px 30px;
-    }
-    .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-    .header .menu-icon {
-        display: none;
-    }
-    .header {
-        width: 100%;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        padding-left: 100px;
-        padding-right: 100px;
-        position: sticky;
-        background-color: white;
-        top: 0;
-        overflow: hidden;
-        box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.57);
-    }
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header {
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    overflow: hidden;
+    box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.57);
+  }
 }

@@ -51,15 +51,6 @@
         </li>
         <li>
           <a
-          class="nav__item {$page.url.pathname === '/tentang' ? 'active' : ''}"
-          aria-current={$page.url.pathname === "/tentang" ? "page" : undefined}
-          href="/tentang"
-          >
-          Tentang</a
-          >
-        </li>
-        <li>
-          <a
           class="nav__item {$page.url.pathname === '/formulir-pengisian' ? 'active' : ''}"
           aria-current={$page.url.pathname === "/formulir-pengisian" ? "page" : undefined}
           href="/formulir-pengisian"
@@ -67,6 +58,16 @@
           Formulir Pengisian</a
           >
         </li>
+        <li>
+          <a
+          class="nav__item {$page.url.pathname === '/tentang' ? 'active' : ''}"
+          aria-current={$page.url.pathname === "/tentang" ? "page" : undefined}
+          href="/tentang"
+          >
+          Tentang</a
+          >
+        </li>
+
     </ul>
   </header>
 
