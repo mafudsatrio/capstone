@@ -318,6 +318,25 @@ hr {
   margin-top: 25px;
   width: 328px;
 }
+
+.send {
+  max-width: 175px;
+  padding: 10px;
+  font-size: 17px;
+  color: black;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  text-align: center;
+  border-style: none;
+  transition: background-color 0.3s;
+  font-family: 'Ubuntu';
+}
+
+.send:hover {
+  background-color: #395220;
+  color: #ffffff;
+}
+
 .label_form {
   color: #ffffff;
 }

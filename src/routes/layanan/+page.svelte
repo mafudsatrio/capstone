@@ -1,5 +1,5 @@
 <script>
-  import Head from "../../components/Head.svelte";
+  import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/image_page.png";
   import phone from "/src/static/icons/Phone.png";
   import email from "/src/static/icons/Email.png";
@@ -10,10 +10,14 @@
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<Head
+<Hero
   title="Kami Siap Mendengar Anda"
-  caption="Hubungi Kami, Konsultasikan Ide Anda, dan Berikan Feedback yang Berharga. "
+  caption="Kami senang mendengar dari Anda! Jika Anda memiliki ide yang ingin Anda diskusikan, 
+  pertanyaan yang perlu dijawab, atau feedback berharga yang ingin Anda berikan, silakan hubungi 
+  kami. Kami siap mendengarkan dan memberikan saran yang sesuai. Kami sangat menghargai kontribusi 
+  Anda dalam membantu kami meningkatkan pelayanan kami. Terima kasih telah memilih untuk berkomunikasi dengan kami! "
   {image_hero}
+  link="/bank-sampah"
 />
 <div class="maincontent" id="maincontent">
   <div class="layanan_container">
@@ -76,6 +80,7 @@
               required
             />
           </div>
+          <button class="send">Send</button>
         </form>
       </div>
     </div>
