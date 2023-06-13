@@ -51,11 +51,11 @@
         </li>
         <li>
           <a
-          class="nav__item {$page.url.pathname === '/formulir-pengisian' ? 'active' : ''}"
-          aria-current={$page.url.pathname === "/formulir-pengisian" ? "page" : undefined}
-          href="/formulir-pengisian"
+          class="nav__item {$page.url.pathname === '/layanan' ? 'active' : ''}"
+          aria-current={$page.url.pathname === "/layanan" ? "page" : undefined}
+          href="/layanan"
           >
-          Formulir Pengisian</a
+          Layanan</a
           >
         </li>
         <li>

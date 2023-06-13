@@ -319,12 +319,15 @@ hr {
 
 .con {
   margin-top: 25px;
-  width: 70%;
+  width: 328px;
 }
 .deskripsi_konsul {
   margin-top: 50px;
   margin-left: 50px;
   width: 70%;
+}
+.label_form {
+  color: #ffffff;
 }
 .logo-konsul {
   height: 30px;
