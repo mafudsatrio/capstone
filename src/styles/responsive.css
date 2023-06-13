@@ -147,6 +147,11 @@
   .deskripsi_container {
     padding: 15px;
   }
+  .konsul_container, .input-konsul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+ 
 }
 
 @media (min-width: 768px) {

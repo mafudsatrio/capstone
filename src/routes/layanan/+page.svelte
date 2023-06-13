@@ -47,16 +47,34 @@
           <div class="input-konsul">
             <div class="form-group">
               <label class="label_form" for="nama">Nama:</label>
-              <input type="text" id="nama" name="nama" required />
+              <input
+                class="input_feedback"
+                type="text"
+                id="nama"
+                name="nama"
+                required
+              />
             </div>
             <div class="form-group">
               <label class="label_form" for="email">Email:</label>
-              <input type="text" id="email" name="Email" required />
+              <input
+                class="input_feedback"
+                type="text"
+                id="email"
+                name="Email"
+                required
+              />
             </div>
           </div>
           <div class="form-group">
             <label class="label_form" for="Message">Message:</label>
-            <input type="text" id="Message" name="Message" required />
+            <input
+              class="input_feedback"
+              type="text"
+              id="Message"
+              name="Message"
+              required
+            />
           </div>
         </form>
       </div>

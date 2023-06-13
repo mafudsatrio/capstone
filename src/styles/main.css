@@ -673,22 +673,19 @@ label {
   color: #10110e;
 }
 
-.input-konsul .form-group input, form .form-group input{
-  color: white;
-  background-color: #4c7031;
+.input_feedback {
   border-top: none;
   border-left:none;
   border-right: none;
   border-bottom:rgb(255, 255, 255) 3px solid;
   border-radius: 0px;
   font-family: 'Ubuntu';
+  color: white;
+  background-color: #4c7031;
+  width: 100%
 }
 
-input[type='text'],
-input[type='tel'],
-input[type='email'],
-input[type='number'],
-input[type='Message'],
+.formulir .form-group input,
 select {
   width: 100%;
   padding: 10px;
