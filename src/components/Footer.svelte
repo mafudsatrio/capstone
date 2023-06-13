@@ -44,6 +44,15 @@
         </li>
         <li>
           <a
+            class={$page.url.pathname === "/layanan" ? "active" : ""}
+            aria-current={$page.url.pathname === "/layanan"
+              ? "page"
+              : undefined}
+            href="/layanan">Layanan</a
+          >
+        </li>
+        <li>
+          <a
             class={$page.url.pathname === "/tentang" ? "active" : ""}
             aria-current={$page.url.pathname === "/tentang"
               ? "page"

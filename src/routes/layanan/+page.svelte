@@ -83,7 +83,7 @@
               required
             />
           </div>
-          <button class="send">Send</button>
+          <button class="send">Kirim</button>
         </form>
       </div>
     </div>

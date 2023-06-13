@@ -56,7 +56,7 @@
         alert("Berhasil mengirim formulir");
 
         const pdf = await createPDF(res.data.payload.data._id);
-        const url = import.meta.env.VITE_API_URL ?? "http://localhost:3000/";
+        const url = import.meta.env.VITE_API_URL ?? "https://tracycle-api.vercel.app/";
         window.open(url + pdf.data.payload.data, "_blank").focus();
       })
       .catch((err) => {
