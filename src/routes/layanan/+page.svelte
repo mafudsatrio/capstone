@@ -56,6 +56,7 @@
                 type="text"
                 id="nama"
                 name="nama"
+                placeholder="Masukan Nama Anda..."
                 required
               />
             </div>
@@ -66,6 +67,7 @@
                 type="text"
                 id="email"
                 name="Email"
+                placeholder="Masukan Email Anda..."
                 required
               />
             </div>
@@ -77,6 +79,7 @@
               type="text"
               id="Message"
               name="Message"
+              placeholder="Masukan Pesan Anda..."
               required
             />
           </div>
