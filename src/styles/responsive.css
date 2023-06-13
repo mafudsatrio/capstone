@@ -68,6 +68,16 @@
   }
 }
 
+@media (max-width: 515px) {
+  /* Ubah ukuran padding saat lebar layar maksimum 480px */
+  .grid-container {
+    grid-template-columns: 2fr 2fr;
+  }
+  .grid-container div {
+    padding: 25px;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .sub_layanan {
     display: grid;
