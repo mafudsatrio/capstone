@@ -4,6 +4,7 @@
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
   import { createEventDispatcher } from "svelte";
+  import { postTransaksi, createPDF } from "../../utils/api.js";
 
   const dispatch = createEventDispatcher();
 
@@ -25,12 +26,32 @@
     hargaTotal = beratSampah * hargaPerKilo;
   }
 
-  function submitForm() {
-    dispatch("submit", {
-      berat: beratSampah,
-      jenis: jenisSampah,
-      harga: hargaTotal,
-    });
+  async function submitForm(event) {
+    const formData = new FormData(event.target); 
+    const obj = Object.fromEntries(Array.from(formData.keys()).map(key => [key, formData.getAll(key).length > 1 ? formData.getAll(key) : formData.get(key)]))
+
+
+    await postTransaksi({
+      nama: obj.nama,
+      alamat: obj.alamat,
+      nohp: obj.telepon,
+      email: obj.email,
+      jenisSampah: jenisSampah,
+      beratSampah: beratSampah,
+      hargaTotal: hargaTotal,
+    })
+      .then(async (res) => {
+        console.log(res.data.payload.data._id);
+        alert("Berhasil mengirim formulir");
+
+        const pdf = await createPDF(res.data.payload.data._id);
+        const url = import.meta.env.VITE_API_URL ?? "http://localhost:3000"
+        window.open(url + pdf.data.payload.data, '_blank').focus();
+      })
+      .catch((err) => {
+        console.log(err)
+        alert("Gagal mengirim formulir");
+    })
   }
 </script>
 
@@ -49,7 +70,7 @@
 <div class="maincontent" id="maincontent">
   <div class="layanan_container">
     <div class="layanan_title">
-      <h1>Jenis Sampah</h1>
+      <h1>Jenis Sampah </h1>
       <hr />
       <p>Sampah yang dapat anda tukarkan di Tracycle</p>
     </div>
@@ -194,7 +215,7 @@
   </div>
 
   <div class="formulir" id="formulir">
-    <form on:submit={submitForm}  class="formulir">
+    <form on:submit|preventDefault={submitForm}  class="formulir">
       <h2>Biodata</h2>
       <div class="form-group">
         <label for="nama">Nama:</label>
