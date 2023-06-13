@@ -652,8 +652,6 @@ footer {
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #4c7031;
-  border-radius: 10px;
 }
 .formulir-konsul h2 {
   text-align: center;
@@ -684,7 +682,7 @@ input[type='Message'],
 select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 4px;
 }
 

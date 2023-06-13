@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>Tracycle - Tentang</title>
+  <title>Tracycle - Layanan</title>
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
