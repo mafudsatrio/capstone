@@ -1,7 +1,7 @@
 <script>
   import Head from "../../components/Head.svelte";
   import image_hero from "/src/static/images/image_page.png";
-  import phone from "/src/static/icons/phone.png";
+  import phone from "/src/static/icons/Phone.png";
   import email from "/src/static/icons/email.png";
 </script>
 
