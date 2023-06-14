@@ -321,7 +321,7 @@ hr {
 
 .send {
   max-width: 175px;
-  padding: 10px;
+  padding: 12px 16px 12px 16px;
   font-size: 17px;
   color: black;
   background-color: #ebebeb;
@@ -330,6 +330,7 @@ hr {
   border-style: none;
   transition: background-color 0.3s;
   font-family: 'Ubuntu';
+  cursor: pointer;
 }
 
 .send:hover {
@@ -698,8 +699,6 @@ label {
 }
 
 .input_feedback {
-  margin-top: 15px;
-  height: 25px;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -709,9 +708,13 @@ label {
   color: white;
   background-color: #4c7031;
   width: 100%;
+  padding: 6px 3px 6px 3px;
 }
 .input_feedback::placeholder {
   color: #9e9e9e; /* Ganti dengan warna yang diinginkan */
+}
+.input_feedback:focus{
+  outline-color: white;
 }
 
 .formulir .form-group input,

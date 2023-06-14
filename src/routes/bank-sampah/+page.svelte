@@ -85,8 +85,8 @@
       <h1>Jenis Sampah</h1>
       <hr />
       <div class="jenis_sampah_desc">
-      <p>Sampah yang dapat anda tukarkan di Tracycle</p>
-    </div>
+        <p>Sampah yang dapat anda tukarkan di Tracycle</p>
+      </div>
     </div>
     <div class="grid-container">
       <div class="item1">
@@ -99,49 +99,24 @@
         Plastik
       </div>
       <div class="item2">
-        <img
-          src={image_kertas}
-          alt="kertas"
-          width="100px"
-          height="100px"
-        />
+        <img src={image_kertas} alt="kertas" width="100px" height="100px" />
         Kertas
       </div>
       <div class="item3">
-        <img
-          src="{image_kaca}"
-          alt="Botol"
-          width="100px"
-          height="100px"
-        />
+        <img src={image_kaca} alt="Botol" width="100px" height="100px" />
         Botol Kaca
       </div>
 
       <div class="item4">
-        <img
-          src={image_logam}
-          alt="Besi"
-          width="100px"
-          height="100px"
-        />
+        <img src={image_logam} alt="Besi" width="100px" height="100px" />
         Besi
       </div>
       <div class="item5">
-        <img
-          src={image_kaleng}
-          alt="botol kaca"
-          width="100px"
-          height="100px"
-        />
+        <img src={image_kaleng} alt="botol kaca" width="100px" height="100px" />
         Kaleng
       </div>
       <div class="item6">
-        <img
-          src={image_kardus}
-          alt="Kardus"
-          width="100px"
-          height="100px"
-        />
+        <img src={image_kardus} alt="Kardus" width="100px" height="100px" />
         Kardus
       </div>
     </div>
@@ -156,11 +131,11 @@
       <div class="layanan">
         <p class="tukar">1</p>
         <div class="sub_layanan_title">
-          <h1>Pisahkan  Sampah Anda</h1>
+          <h1>Pisahkan Sampah Anda</h1>
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Pisahkan sampah berdasarkan jenisnya dan tentukan lokasi yang 
+            Pisahkan sampah berdasarkan jenisnya dan tentukan lokasi yang
             berbeda untuk setiap kategori sampah tersebut.
           </p>
         </div>
@@ -172,7 +147,8 @@
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Lakukan estimasi berat sampah yang akan ditukarkan atau hitung beratnya secara akurat.
+            Lakukan estimasi berat sampah yang akan ditukarkan atau hitung
+            beratnya secara akurat.
           </p>
         </div>
       </div>
@@ -183,7 +159,8 @@
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Isilah formulir dengan alamat penjemputan dan informasi sampah yang diminta.
+            Isilah formulir dengan alamat penjemputan dan informasi sampah yang
+            diminta.
           </p>
         </div>
       </div>
@@ -194,7 +171,8 @@
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Mohon bersabar menunggu kedatangan tim kami untuk proses penjemputan sampah.
+            Mohon bersabar menunggu kedatangan tim kami untuk proses penjemputan
+            sampah.
           </p>
         </div>
       </div>
@@ -205,8 +183,8 @@
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Lakukan pengecekan  timbangan kembali. Pengecekan dilakukan untuk menjaga 
-            transparansi dalam proses pengukuran.
+            Lakukan pengecekan timbangan kembali. Pengecekan dilakukan untuk
+            menjaga transparansi dalam proses pengukuran.
           </p>
         </div>
       </div>
@@ -217,8 +195,9 @@
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Setelah penjemputan dan pengukuran selesai, kamu dapat menerima hasil
-            pembayaran dari sampahmu secara langsung yang diberikan oleh tim Tracycle.
+            Setelah penjemputan dan pengukuran selesai, kamu dapat menerima
+            hasil pembayaran dari sampahmu secara langsung yang diberikan oleh
+            tim Tracycle.
           </p>
         </div>
       </div>
