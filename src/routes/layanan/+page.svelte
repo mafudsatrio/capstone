@@ -6,6 +6,8 @@
   import { createEventDispatcher } from "svelte";
   import { postFeedback } from "../../utils/api.js";
 
+  const dispatch = createEventDispatcher();
+
   let nama = "";
   let email = "";
   let message = "";
