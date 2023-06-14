@@ -16,10 +16,6 @@
   let jenisSampah = "";
   let hargaTotal = 0;
   let hargaPerKilo = 0;
-  let nama = '';
-  let alamat = '';
-  let telepon = '';
-  let email = '';
   const SAMPAH = {
     plastik: 1000,
     kertas: 1500,
@@ -54,29 +50,14 @@
       beratSampah: beratSampah,
     })
       .then(async (res) => {
-        const doc = new jsPDF();
         const obj = res.data.payload.data;
-
-        document.getElementById('pdf').style.display = 'block';
-        
-        nama = obj.nama;
-        alamat = obj.alamat;
-        telepon = obj.nohp;
-        email = obj.email;
-
-        doc.html(document.getElementById('pdf'), {
-          callback: function(doc) {
-            doc.save("formulir.pdf");
-            document.getElementById('pdf').style.display = 'none';
-          },
-          x: 10,
-          y: 10,
-        });
         alert("Berhasil mengirim formulir");
+        const url = import.meta.env.VITE_API_URL ?? "https://tracycle-api.vercel.app";
+        window.open(url + `/transaksi/pdf/${obj._id}`, '_blank');
       })
-      // .catch((err) => {
-      //   alert("Gagal mengirim formulir");
-      // });
+      .catch((err) => {
+        alert("Gagal mengirim formulir");
+      });
   }
 </script>
 
@@ -294,15 +275,4 @@
       </div>
     </form>
   </div>
-</div>
-
-<div id="pdf" style="display: none">
-  Nama : {nama} <br>
-  Alamat : {alamat} <br>
-  No. Telepon : {telepon} <br>
-  Email : {email} <br>
-  Jenis Sampah : {jenisSampah} <br>
-  Berat Sampah : {beratSampah} <br>
-  Harga Per Kilo : {hargaPerKilo} <br>
-  Harga Total : {hargaTotal} <br>
 </div>
