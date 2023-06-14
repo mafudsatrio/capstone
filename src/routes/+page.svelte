@@ -15,7 +15,7 @@
 <svelte:head>
   
   <title>Tracycle - Home</title>
-  <meta name="description" content="Bantu jaga bumi bersama Tracycle" />
+  <meta name="description" content="Svelte demo app" />
 
 </svelte:head>
 
