@@ -11,7 +11,7 @@
 
 <svelte:head>
   <title>Tracycle - Daur Ulang</title>
-  <meta name="description" content="Svelte demo app" />
+  <meta name="description" content="" />
 </svelte:head>
 
 <Hero

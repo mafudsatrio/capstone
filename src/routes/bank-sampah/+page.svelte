@@ -1,7 +1,6 @@
 <script>
   // @ts-nocheck
 
-  import { jsPDF } from "jspdf";
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
   import { postTransaksi } from "../../utils/api.js";
@@ -11,6 +10,9 @@
   import image_logam from "/src/static/icons/metal.png";
   import image_kaca from "/src/static/icons/botolkaca.png";
   import image_kaleng from "/src/static/icons/kaleng.png";
+  import { createEventDispatcher } from "svelte";
+
+  const dispatch = createEventDispatcher();
 
   let beratSampah = 0;
   let jenisSampah = "";
@@ -64,7 +66,7 @@
 
 <svelte:head>
   <title>Tracycle - Bank Sampah</title>
-  <meta name="description" content="Svelte demo app" />
+  <meta name="description" content="" />
 </svelte:head>
 
 <Hero

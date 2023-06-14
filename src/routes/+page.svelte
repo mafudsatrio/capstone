@@ -6,17 +6,12 @@
   import bank from "../static/images/Bank.png";
   import pick from "../static/images/Pick.png";
   import Konsultasi from "../static/images/Konsultasi.png";
-  import { onMount } from 'svelte';
-  
-
-
+  import { onMount } from "svelte";
 </script>
 
 <svelte:head>
-  
   <title>Tracycle - Home</title>
-  <meta name="description" content="Svelte demo app" />
-
+  <meta name="description" content="Bantu jaga bumi bersama Tracycle" />
 </svelte:head>
 
 <Hero
@@ -62,8 +57,9 @@
         </div>
         <div class="deskripsi_layanan">
           <p>
-            Di Tracycle, Anda dapat meraih manfaat luar biasa dengan "menabung" sampah! Tukarkan 
-            sampah Anda  dan dapatkan beragam keuntungan yang kami tawarkan.
+            Di Tracycle, Anda dapat meraih manfaat luar biasa dengan "menabung"
+            sampah! Tukarkan sampah Anda dan dapatkan beragam keuntungan yang
+            kami tawarkan.
           </p>
         </div>
       </div>

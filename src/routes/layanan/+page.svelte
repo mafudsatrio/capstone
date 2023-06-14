@@ -26,7 +26,7 @@
 
 <svelte:head>
   <title>Tracycle - Layanan</title>
-  <meta name="description" content="Svelte demo app" />
+  <meta name="description" content="" />
 </svelte:head>
 
 <Hero
