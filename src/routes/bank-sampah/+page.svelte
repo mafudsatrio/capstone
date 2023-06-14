@@ -1,17 +1,19 @@
 <script>
   // @ts-nocheck
-  
-  import { jsPDF } from "jspdf";
+
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
-  import { postTransaksi } from "../../utils/api.js";
+  import { createEventDispatcher } from "svelte";
+  import { postTransaksi, createPDF } from "../../utils/api.js";
   import image_plastik from "/src/static/icons/plastic.png";
   import image_kertas from "/src/static/icons/kertas.png";
   import image_kardus from "/src/static/icons/kardus.png";
   import image_logam from "/src/static/icons/metal.png";
   import image_kaca from "/src/static/icons/botolkaca.png";
   import image_kaleng from "/src/static/icons/kaleng.png";
-  
+
+  const dispatch = createEventDispatcher();
+
   let beratSampah = 0;
   let jenisSampah = "";
   let hargaTotal = 0;
@@ -50,10 +52,13 @@
       beratSampah: beratSampah,
     })
       .then(async (res) => {
-        const obj = res.data.payload.data;
+        console.log(res.data.payload.data._id);
         alert("Berhasil mengirim formulir");
-        const url = import.meta.env.VITE_API_URL ?? "https://tracycle-api.vercel.app";
-        window.open(url + `/transaksi/pdf/${obj._id}`, '_blank');
+
+        const pdf = await createPDF(res.data.payload.data._id);
+        localStorage.setItem("pdfbase64", pdf.data.payload.data);
+
+        window.open(window.location.origin + "/pdf", "_blank").focus();
       })
       .catch((err) => {
         alert("Gagal mengirim formulir");
