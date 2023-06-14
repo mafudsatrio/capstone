@@ -1,10 +1,10 @@
 <script>
   // @ts-nocheck
-
+  
+  import { jsPDF } from "jspdf";
   import Hero from "../../components/Hero.svelte";
   import image_hero from "/src/static/images/daur_ulang.png";
-  import { createEventDispatcher } from "svelte";
-  import { postTransaksi, createPDF } from "../../utils/api.js";
+  import { postTransaksi } from "../../utils/api.js";
   import image_plastik from "/src/static/icons/plastic.png";
   import image_kertas from "/src/static/icons/kertas.png";
   import image_kardus from "/src/static/icons/kardus.png";
@@ -18,6 +18,10 @@
   let jenisSampah = "";
   let hargaTotal = 0;
   let hargaPerKilo = 0;
+  let nama = '';
+  let alamat = '';
+  let telepon = '';
+  let email = '';
   const SAMPAH = {
     plastik: 1000,
     kertas: 1500,
@@ -52,17 +56,29 @@
       beratSampah: beratSampah,
     })
       .then(async (res) => {
-        console.log(res.data.payload.data._id);
+        const doc = new jsPDF();
+        const obj = res.data.payload.data;
+
+        document.getElementById('pdf').style.display = 'block';
+        
+        nama = obj.nama;
+        alamat = obj.alamat;
+        telepon = obj.nohp;
+        email = obj.email;
+
+        doc.html(document.getElementById('pdf'), {
+          callback: function(doc) {
+            doc.save("formulir.pdf");
+            document.getElementById('pdf').style.display = 'none';
+          },
+          x: 10,
+          y: 10,
+        });
         alert("Berhasil mengirim formulir");
-
-        const pdf = await createPDF(res.data.payload.data._id);
-        localStorage.setItem("pdfbase64", pdf.data.payload.data);
-
-        window.open(window.location.origin + '/pdf' , "_blank").focus();
       })
-      .catch((err) => {
-        alert("Gagal mengirim formulir");
-      });
+      // .catch((err) => {
+      //   alert("Gagal mengirim formulir");
+      // });
   }
 </script>
 
@@ -280,4 +296,15 @@
       </div>
     </form>
   </div>
+</div>
+
+<div id="pdf" style="display: none">
+  Nama : {nama} <br>
+  Alamat : {alamat} <br>
+  No. Telepon : {telepon} <br>
+  Email : {email} <br>
+  Jenis Sampah : {jenisSampah} <br>
+  Berat Sampah : {beratSampah} <br>
+  Harga Per Kilo : {hargaPerKilo} <br>
+  Harga Total : {hargaTotal} <br>
 </div>
