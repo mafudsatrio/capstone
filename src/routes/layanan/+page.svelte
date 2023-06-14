@@ -100,7 +100,7 @@
               required
             />
           </div>
-          <button type="submit" class="send">Submit</button>
+          <button type="submit" class="send">Send</button>
         </form>
       </div>
     </div>
