@@ -321,7 +321,7 @@ hr {
 
 .send {
   max-width: 175px;
-  padding: 10px;
+  padding: 12px 16px 12px 16px;
   font-size: 17px;
   color: black;
   background-color: #ebebeb;
