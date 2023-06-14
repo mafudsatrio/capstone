@@ -11,8 +11,6 @@
   import image_logam from "/src/static/icons/metal.png";
   import image_kaca from "/src/static/icons/botolkaca.png";
   import image_kaleng from "/src/static/icons/kaleng.png";
-
-  const dispatch = createEventDispatcher();
   
   let beratSampah = 0;
   let jenisSampah = "";
