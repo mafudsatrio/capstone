@@ -7,9 +7,6 @@
   import image_besi from "/src/static/icons/besi.png";
   import image_kaleng from "/src/static/icons/kaleng_white.png";
   import image_kardus from "/src/static/icons/kardus_white.png";
-  let title = "Tukarkan Sampahmu di Tracycle";
-  let caption =
-    "Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!";
 </script>
 
 <svelte:head>
@@ -71,11 +68,7 @@
       <div class="half_container">
         <div class="top">
           <div class="daur-ulang_icon">
-            <img
-              class="icon"
-              src={image_kertas}
-              alt="botol"
-            />
+            <img class="icon" src={image_kertas} alt="botol" />
           </div>
         </div>
         <div class="bottom">
