@@ -12,8 +12,6 @@
   import image_kaca from "/src/static/icons/botolkaca.png";
   import image_kaleng from "/src/static/icons/kaleng.png";
 
-  const dispatch = createEventDispatcher();
-
   let beratSampah = 0;
   let jenisSampah = "";
   let hargaTotal = 0;
@@ -56,12 +54,11 @@
         alert("Berhasil mengirim formulir");
 
         const pdf = await createPDF(res.data.payload.data._id);
-        const url =
-          import.meta.env.VITE_API_URL ?? "https://tracycle-api.vercel.app/";
-        window.open(url + pdf.data.payload.data, "_blank").focus();
+        localStorage.setItem("pdfbase64", pdf.data.payload.data);
+
+        window.open(window.location.origin + '/pdf' , "_blank").focus();
       })
       .catch((err) => {
-        console.log(err);
         alert("Gagal mengirim formulir");
       });
   }
