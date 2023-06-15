@@ -94,8 +94,8 @@
 
 <Hero
   title="Tukarkan Sampahmu di Tracycle"
-  caption="Tracycle memungkinkan Anda menukarkan sampah dengan manfaat bernilai. Kumpulkan sampah, 
-  tukarkan dengan poin, dan dapatkan diskon atau voucher belanja. Sambil berkontribusi pada kebersihan 
+  caption="Tracycle memungkinkan Anda menukarkan sampah dengan manfaat bernilai. Kumpulkan sampah, lalu
+  tukarkan menjadi uang. Sambil berkontribusi pada kebersihan 
   lingkungan, Anda juga mendapatkan manfaat langsung. Bergabunglah dengan Tracycle dan dukung kelestarian 
   lingkungan melalui penukaran sampah yang bermanfaat."
   {image_hero}
@@ -232,6 +232,19 @@
     <hr />
     <div class="jenis_sampah_desc">
       <p>Isi formulir untuk Menukar Sampah</p>
+    </div>
+    
+  </div>
+  <div class="note_container">
+    <div class="note">
+      <h1>Catatan</h1>
+    </div>
+    <div class="deskripsi_paragraf">
+      <p>
+        Jika Anda telah mengisi formulir lalu menekan submit, pop up "Berhasil mengirim formulir" 
+        akan muncul dan jika anda menekan "OK" maka secara otomatis invoice akan di unduh sebagai bukti transaksi.
+        Anda tinggal menunggu tim Tracycle untuk datang menjemput sampat anda.
+      </p>
     </div>
   </div>
 

@@ -21,7 +21,7 @@
   link="/bank-sampah"
 />
 
-<div class="maincontent" id="maincontent">
+<div class="maincontent" id="maincontent" >
   <div class="deskripsi_container">
     <div class="nama">
       <h1>Tracycle</h1>

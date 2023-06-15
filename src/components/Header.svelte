@@ -10,14 +10,18 @@
   //     x.className = "topnav";
   //   }
   // }
+
 </script>
+<a href="#maincontent" class="skip-link" tabindex="0">Skip to Content</a>
 
   <header class="header">
     <a href="/"><img src={logo} alt="Tracycle" class="header__image" /></a>
 
     <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon" /></label>
-    <ul class="menu">
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span>
+  </label>
+
+  <ul class="menu" id="menu">
         <li>
         <a
         class="nav__item {$page.url.pathname === '/' ? 'active' : ''}"
