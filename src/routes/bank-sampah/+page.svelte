@@ -13,7 +13,12 @@
   import { createEventDispatcher } from "svelte";
   import Swal from "sweetalert2";
 
+  
+
   const dispatch = createEventDispatcher();
+
+  let isLoading = false; // Add a variable to track the loading state
+
 
   let beratSampah = 0;
   let jenisSampah = "";
@@ -34,46 +39,57 @@
   }
 
   async function submitForm(event) {
-    const formData = new FormData(event.target);
-    const obj = Object.fromEntries(
-      Array.from(formData.keys()).map((key) => [
-        key,
-        formData.getAll(key).length > 1
-          ? formData.getAll(key)
-          : formData.get(key),
-      ])
-    );
+  isLoading = true;
 
-    await postTransaksi({
-      nama: obj.nama,
-      alamat: obj.alamat,
-      nohp: obj.telepon,
-      email: obj.email,
-      jenisSampah: jenisSampah,
-      beratSampah: beratSampah,
-    })
-      .then(async (res) => {
-        const obj = res.data.payload.data;
-        Swal.fire({
-          icon: "success",
-          title: "Sukses",
-          text: "Berhasil mengirim formulir",
-          confirmButtonColor: "#4c7031",
-        });
-        const url =
-          import.meta.env.VITE_API_URL ?? "https://tracycle-api.vercel.app";
-        window.open(url + `/transaksi/pdf/${obj._id}`, "_blank");
-      })
-      .catch((err) => {
-        Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Gagal mengirim formulir",
-          confirmButtonColor: "#4c7031",
-        });
+  const formData = new FormData(event.target);
+  const obj = Object.fromEntries(
+    Array.from(formData.keys()).map((key) => [
+      key,
+      formData.getAll(key).length > 1
+        ? formData.getAll(key)
+        : formData.get(key),
+    ])
+  );
+
+  await postTransaksi({
+    nama: obj.nama,
+    alamat: obj.alamat,
+    nohp: obj.telepon,
+    email: obj.email,
+    jenisSampah: jenisSampah,
+    beratSampah: beratSampah,
+  })
+    .then(async (res) => {
+      const obj = res.data.payload.data;
+      await Swal.fire({
+        icon: "success",
+        title: "Sukses",
+        text: "Berhasil mengirim formulir",
+        confirmButtonColor: "#4c7031",
       });
-  }
+
+      const url =
+        import.meta.env.VITE_API_URL ?? "https://tracycle-api.vercel.app";
+      const response = await fetch(url + `/transaksi/pdf/${obj._id}`);
+      const blob = await response.blob();
+
+      const fileURL = URL.createObjectURL(blob);
+      window.open(fileURL);
+    })
+    .catch((err) => {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Gagal mengirim formulir",
+        confirmButtonColor: "#4c7031",
+      });
+    })
+    .finally(() => {
+      isLoading = false;
+    });
+}
 </script>
+
 
 <svelte:head>
   <title>Tracycle - Bank Sampah</title>
@@ -222,6 +238,11 @@
       <p>Isi formulir untuk Menukar Sampah</p>
     </div>
   </div>
+  
+  {#if isLoading}
+  <div class="loader">Loading...</div>
+{:else}
+
   <div class="formulir" id="formulir">
     <form on:submit|preventDefault={submitForm} class="formulir">
       <h2>Biodata</h2>
@@ -296,4 +317,7 @@
       </div>
     </form>
   </div>
+  {/if}
 </div>
+
+
