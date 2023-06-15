@@ -11,6 +11,7 @@
   import image_kaca from "/src/static/icons/botolkaca.png";
   import image_kaleng from "/src/static/icons/kaleng.png";
   import { createEventDispatcher } from "svelte";
+  import Swal from "sweetalert2";
 
   const dispatch = createEventDispatcher();
 
@@ -53,13 +54,23 @@
     })
       .then(async (res) => {
         const obj = res.data.payload.data;
-        alert("Berhasil mengirim formulir");
+        Swal.fire({
+          icon: "success",
+          title: "Sukses",
+          text: "Berhasil mengirim formulir",
+          confirmButtonColor: "#4c7031",
+        });
         const url =
           import.meta.env.VITE_API_URL ?? "https://tracycle-api.vercel.app";
         window.open(url + `/transaksi/pdf/${obj._id}`, "_blank");
       })
       .catch((err) => {
-        alert("Gagal mengirim formulir");
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Gagal mengirim formulir",
+          confirmButtonColor: "#4c7031",
+        });
       });
   }
 </script>
@@ -204,6 +215,13 @@
     </div>
   </div>
 
+  <div class="layanan_title">
+    <h1>Tukar Sampah</h1>
+    <hr />
+    <div class="jenis_sampah_desc">
+      <p>Isi formulir untuk Menukar Sampah</p>
+    </div>
+  </div>
   <div class="formulir" id="formulir">
     <form on:submit|preventDefault={submitForm} class="formulir">
       <h2>Biodata</h2>

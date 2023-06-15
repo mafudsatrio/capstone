@@ -5,6 +5,7 @@
   import emailico from "/src/static/icons/Email.png";
   import { createEventDispatcher } from "svelte";
   import { postFeedback } from "../../utils/api.js";
+  import Swal from "sweetalert2";
 
   const dispatch = createEventDispatcher();
 
@@ -16,10 +17,20 @@
     try {
       const response = await postFeedback({ nama, email, message });
       console.log(response.data.payload.data._id);
-      alert("Berhasil mengirim feedback");
+      Swal.fire({
+        icon: "success",
+        title: "Sukses",
+        text: "Berhasil mengirim feedback",
+        confirmButtonColor: "#4c7031",
+      });
     } catch (error) {
       console.error(error);
-      alert("Gagal mengirim feedback");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Gagal mengirim feedback",
+        confirmButtonColor: "#4c7031",
+      });
     }
   }
 </script>
