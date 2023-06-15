@@ -13,12 +13,9 @@
   import { createEventDispatcher } from "svelte";
   import Swal from "sweetalert2";
 
-  
-
   const dispatch = createEventDispatcher();
 
   let isLoading = false; // Add a variable to track the loading state
-
 
   let beratSampah = 0;
   let jenisSampah = "";
@@ -39,57 +36,56 @@
   }
 
   async function submitForm(event) {
-  isLoading = true;
+    isLoading = true;
 
-  const formData = new FormData(event.target);
-  const obj = Object.fromEntries(
-    Array.from(formData.keys()).map((key) => [
-      key,
-      formData.getAll(key).length > 1
-        ? formData.getAll(key)
-        : formData.get(key),
-    ])
-  );
+    const formData = new FormData(event.target);
+    const obj = Object.fromEntries(
+      Array.from(formData.keys()).map((key) => [
+        key,
+        formData.getAll(key).length > 1
+          ? formData.getAll(key)
+          : formData.get(key),
+      ])
+    );
 
-  await postTransaksi({
-    nama: obj.nama,
-    alamat: obj.alamat,
-    nohp: obj.telepon,
-    email: obj.email,
-    jenisSampah: jenisSampah,
-    beratSampah: beratSampah,
-  })
-    .then(async (res) => {
-      const obj = res.data.payload.data;
-      await Swal.fire({
-        icon: "success",
-        title: "Sukses",
-        text: "Berhasil mengirim formulir",
-        confirmButtonColor: "#4c7031",
-      });
-
-      const url =
-        import.meta.env.VITE_API_URL ?? "https://tracycle-api.vercel.app";
-      const response = await fetch(url + `/transaksi/pdf/${obj._id}`);
-      const blob = await response.blob();
-
-      const fileURL = URL.createObjectURL(blob);
-      window.open(fileURL);
+    await postTransaksi({
+      nama: obj.nama,
+      alamat: obj.alamat,
+      nohp: obj.telepon,
+      email: obj.email,
+      jenisSampah: jenisSampah,
+      beratSampah: beratSampah,
     })
-    .catch((err) => {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Gagal mengirim formulir",
-        confirmButtonColor: "#4c7031",
+      .then(async (res) => {
+        const obj = res.data.payload.data;
+        await Swal.fire({
+          icon: "success",
+          title: "Sukses",
+          text: "Berhasil mengirim formulir",
+          confirmButtonColor: "#4c7031",
+        });
+
+        const url =
+          import.meta.env.VITE_API_URL ?? "https://tracycle-api.vercel.app";
+        const response = await fetch(url + `/transaksi/pdf/${obj._id}`);
+        const blob = await response.blob();
+
+        const fileURL = URL.createObjectURL(blob);
+        window.open(fileURL);
+      })
+      .catch((err) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Gagal mengirim formulir",
+          confirmButtonColor: "#4c7031",
+        });
+      })
+      .finally(() => {
+        isLoading = false;
       });
-    })
-    .finally(() => {
-      isLoading = false;
-    });
-}
+  }
 </script>
-
 
 <svelte:head>
   <title>Tracycle - Bank Sampah</title>
@@ -238,86 +234,83 @@
       <p>Isi formulir untuk Menukar Sampah</p>
     </div>
   </div>
-  
+
   {#if isLoading}
-  <div class="loader">Loading...</div>
-{:else}
+    <div class="loader" />
+  {:else}
+    <div class="formulir" id="formulir">
+      <form on:submit|preventDefault={submitForm} class="formulir">
+        <h2>Biodata</h2>
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required />
+        </div>
+        <div class="form-group">
+          <label for="alamat">Alamat:</label>
+          <input type="text" id="alamat" name="alamat" required />
+        </div>
+        <div class="form-group">
+          <label for="telepon">Nomor Telepon:</label>
+          <input type="tel" id="telepon" name="telepon" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Alamat Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
 
-  <div class="formulir" id="formulir">
-    <form on:submit|preventDefault={submitForm} class="formulir">
-      <h2>Biodata</h2>
-      <div class="form-group">
-        <label for="nama">Nama:</label>
-        <input type="text" id="nama" name="nama" required />
-      </div>
-      <div class="form-group">
-        <label for="alamat">Alamat:</label>
-        <input type="text" id="alamat" name="alamat" required />
-      </div>
-      <div class="form-group">
-        <label for="telepon">Nomor Telepon:</label>
-        <input type="tel" id="telepon" name="telepon" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Alamat Email:</label>
-        <input type="email" id="email" name="email" required />
-      </div>
+        <h2>Jenis Sampah</h2>
+        <div class="form-group">
+          <label for="jenis">Jenis Sampah:</label>
+          <select id="jenis" bind:value={jenisSampah} required>
+            <option value="" disabled selected color="#grey"
+              >Pilih Jenis Sampah :</option
+            >
+            <option value="plastik">Plastik</option>
+            <option value="kertas">Kertas/Karton</option>
+            <option value="logam">Logam</option>
+            <option value="kaca">Kaca</option>
+            <option value="kaleng">Kaleng</option>
+            <option value="kardus">Kardus</option>
+          </select>
+        </div>
 
-      <h2>Jenis Sampah</h2>
-      <div class="form-group">
-        <label for="jenis">Jenis Sampah:</label>
-        <select id="jenis" bind:value={jenisSampah} required>
-          <option value="" disabled selected color="#grey"
-            >Pilih Jenis Sampah :</option
-          >
-          <option value="plastik">Plastik</option>
-          <option value="kertas">Kertas/Karton</option>
-          <option value="logam">Logam</option>
-          <option value="kaca">Kaca</option>
-          <option value="kaleng">Kaleng</option>
-          <option value="kardus">Kardus</option>
-        </select>
-      </div>
+        <div class="form-group">
+          <label for="berat">Berat (Kg):</label>
+          <input
+            type="number"
+            min="1"
+            max="100"
+            step=".1"
+            id="berat"
+            bind:value={beratSampah}
+            required
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="berat">Berat (Kg):</label>
-        <input
-          type="number"
-          min="1"
-          max="100"
-          step=".1"
-          id="berat"
-          bind:value={beratSampah}
-          required
-        />
-      </div>
+        <div class="form-group">
+          <label for="hargaPerKilo">Harga Per Kilo:</label>
+          <input
+            type="text"
+            id="hargaPerKilo"
+            value="Rp.{hargaPerKilo}"
+            readonly
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="hargaPerKilo">Harga Per Kilo:</label>
-        <input
-          type="text"
-          id="hargaPerKilo"
-          value="Rp.{hargaPerKilo}"
-          readonly
-        />
-      </div>
+        <div class="form-group">
+          <label for="hargaTotal">Harga Total:</label>
+          <input
+            type="text"
+            id="hargaTotal"
+            value="Rp.{new Intl.NumberFormat(['ban', 'id']).format(hargaTotal)}"
+            readonly
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="hargaTotal">Harga Total:</label>
-        <input
-          type="text"
-          id="hargaTotal"
-          value="Rp.{new Intl.NumberFormat(['ban', 'id']).format(hargaTotal)}"
-          readonly
-        />
-      </div>
-
-      <div class="btn">
-        <button type="submit" class="submit">Submit</button>
-      </div>
-    </form>
-  </div>
+        <div class="btn">
+          <button type="submit" class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
   {/if}
 </div>
-
-

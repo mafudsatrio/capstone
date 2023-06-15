@@ -12,9 +12,11 @@
   let nama = "";
   let email = "";
   let message = "";
+  let isLoading = false;
 
   async function submitForm() {
     try {
+      isLoading = true;
       const response = await postFeedback({ nama, email, message });
       console.log(response.data.payload.data._id);
       Swal.fire({
@@ -31,6 +33,8 @@
         text: "Gagal mengirim feedback",
         confirmButtonColor: "#4c7031",
       });
+    } finally {
+      isLoading = false;
     }
   }
 </script>
@@ -77,45 +81,49 @@
         </ul>
       </div>
 
-      <div class="formulir-konsul" id="formulir-konsul">
-        <form on:submit|preventDefault={submitForm}>
-          <div class="input-konsul">
+      {#if isLoading}
+        <div class="loader" />
+      {:else}
+        <div class="formulir-konsul" id="formulir-konsul">
+          <form on:submit|preventDefault={submitForm}>
+            <div class="input-konsul">
+              <div class="form-group">
+                <label class="label_form" for="nama">Nama:</label>
+                <input
+                  class="input_feedback"
+                  type="text"
+                  id="nama"
+                  bind:value={nama}
+                  placeholder="Masukkan Nama Anda..."
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="label_form" for="email">Email:</label>
+                <input
+                  class="input_feedback"
+                  type="email"
+                  id="email"
+                  bind:value={email}
+                  placeholder="Masukkan Email Anda..."
+                  required
+                />
+              </div>
+            </div>
             <div class="form-group">
-              <label class="label_form" for="nama">Nama:</label>
-              <input
+              <label class="label_form" for="message">Message:</label>
+              <textarea
                 class="input_feedback"
-                type="text"
-                id="nama"
-                bind:value={nama}
-                placeholder="Masukkan Nama Anda..."
+                id="message"
+                bind:value={message}
+                placeholder="Masukkan Pesan Anda..."
                 required
               />
             </div>
-            <div class="form-group">
-              <label class="label_form" for="email">Email:</label>
-              <input
-                class="input_feedback"
-                type="email"
-                id="email"
-                bind:value={email}
-                placeholder="Masukkan Email Anda..."
-                required
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="label_form" for="message">Message:</label>
-            <textarea
-              class="input_feedback"
-              id="message"
-              bind:value={message}
-              placeholder="Masukkan Pesan Anda..."
-              required
-            />
-          </div>
-          <button type="submit" class="send">Send</button>
-        </form>
-      </div>
+            <button type="submit" class="send">Send</button>
+          </form>
+        </div>
+      {/if}
     </div>
   </div>
 </div>
