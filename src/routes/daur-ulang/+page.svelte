@@ -130,21 +130,21 @@
         </div>
         <div class="bottom">
           <div class="nama-item_daur-ulang">
-            <p>Besi</p>
+            <p>Logam</p>
           </div>
         </div>
       </div>
       <div class="daur-ulang_deskripsi">
         <div class="desc_title">
-          <h1>Besi</h1>
+          <h1>Logam</h1>
         </div>
         <div class="desc">
           <p>
-            Daur ulang besi adalah proses mengubah limbah besi menjadi bahan
-            baru yang dapat digunakan kembali. Untuk mendaur ulang besi,
-            langkah-langkah umum meliputi pengumpulan dan pemisahan besi dari
+            Daur ulang logam adalah proses mengubah limbah logam menjadi bahan
+            baru yang dapat digunakan kembali. Untuk mendaur ulang logam,
+            langkah-langkah umum meliputi pengumpulan dan pemisahan logam dari
             limbah lainnya, pembersihan dan penghapusan kontaminan, peleburan
-            besi untuk membentuk blok atau batangan baru, dan pengolahan lebih
+            logam untuk membentuk blok atau batangan baru, dan pengolahan lebih
             lanjut seperti pemotongan atau pengecoran.
           </p>
         </div>

@@ -2,7 +2,7 @@
   // @ts-nocheck
 
   import Hero from "../../components/Hero.svelte";
-  import image_hero from "/src/static/images/daur_ulang.png";
+  import image_hero from "/src/static/images/bank-sampah.png";
   import { postTransaksi } from "../../utils/api.js";
   import image_plastik from "/src/static/icons/plastic.png";
   import image_kertas from "/src/static/icons/kertas.png";
@@ -131,8 +131,8 @@
       </div>
 
       <div class="item4">
-        <img src={image_logam} alt="Besi" width="100px" height="100px" />
-        Besi
+        <img src={image_logam} alt="Logam" width="100px" height="100px" />
+        Logam
       </div>
       <div class="item5">
         <img src={image_kaleng} alt="botol kaca" width="100px" height="100px" />
@@ -280,8 +280,8 @@
             >
             <option value="plastik">Plastik</option>
             <option value="kertas">Kertas/Karton</option>
+            <option value="kaca">Botol Kaca</option>
             <option value="logam">Logam</option>
-            <option value="kaca">Kaca</option>
             <option value="kaleng">Kaleng</option>
             <option value="kardus">Kardus</option>
           </select>
