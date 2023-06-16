@@ -243,7 +243,7 @@
       <p>
         Jika Anda telah mengisi formulir lalu menekan submit, pop up "Berhasil mengirim formulir" 
         akan muncul dan jika anda menekan "OK" maka secara otomatis invoice akan di unduh sebagai bukti transaksi.
-        Anda tinggal menunggu tim Tracycle untuk datang menjemput sampat anda.
+        Anda tinggal menunggu tim Tracycle untuk datang menjemput sampah anda.
       </p>
     </div>
   </div>
