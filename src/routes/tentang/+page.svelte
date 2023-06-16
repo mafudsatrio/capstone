@@ -1,6 +1,6 @@
 <script>
   import Hero from "../../components/Hero.svelte";
-  import image_hero from "/src/static/images/image_page.png";
+  import image_hero from "/src/static/images/tentang.png";
   import avatar_1 from "/src/static/icons/avatar_1.png";
   import avatar_2 from "/src/static/icons/avatar_2.png";
   import avatar_3 from "/src/static/icons/avatar_3.png";

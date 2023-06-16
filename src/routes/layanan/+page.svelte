@@ -1,6 +1,6 @@
 <script>
   import Hero from "../../components/Hero.svelte";
-  import image_hero from "/src/static/images/image_page.png";
+  import image_hero from "/src/static/images/layanan.png";
   import phone from "/src/static/icons/Phone.png";
   import emailico from "/src/static/icons/Email.png";
   import { createEventDispatcher } from "svelte";
