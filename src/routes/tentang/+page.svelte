@@ -3,7 +3,7 @@
   import image_hero from "/src/static/images/tentang.png";
   import avatar_1 from "/src/static/images/denn.png";
   import avatar_2 from "/src/static/images/fito.png";
-  import avatar_3 from "/src/static/icons/avatar_3.png";
+  import avatar_3 from "/src/static/images/mafud.png";
   import avatar_4 from "/src/static/images/agnes.png";
 </script>
 
