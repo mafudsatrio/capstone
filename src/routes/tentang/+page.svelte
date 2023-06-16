@@ -155,7 +155,7 @@
         <h2>Agnes Glory Siahaan</h2>
       </div>
       <div class="nama_univ">
-        <h2>Universitas Sulawesi Utara</h2>
+        <h2>Universitas Sumatera Utara</h2>
       </div>
     </div>
   </div>
