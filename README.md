@@ -50,7 +50,7 @@
       <th> Database </th>
     </tr>
     <tr>
-     <td>   Netlify || Vercel   </td>
+     <td> <a href="https://tracycle.netlify.app">  Netlify </a> || <a href="https://tracycle-api.vercel.app/"> Vercel </a>  </td>
      <td>  MongoDB  </td>
     </tr>
   </table>
@@ -71,13 +71,16 @@
 </br>
 
 <h2 align="center"> Bahasa Pemrograman dan Tools </h2>
+<img align="left" alt="Figma" width="48px" height="48" src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" style="padding-right:10px;" />
 <img align="left" alt="HTML" width="48px" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" style="padding-right:10px;" />
 <img align="left" alt="CSS" width="48px" height="48" src="https://img.icons8.com/plasticine/48/css3.png" style="padding-right:10px;" />
 <img align="left" alt="JAVASCRIPT" width="48px" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" style="padding-right:10px;" />
-<img align="left" alt="BOOTSTRAP" width="48px" height="48" src="https://img.icons8.com/color/48/bootstrap.png" style="padding-right:10px;" />
+<img align="left" alt="svelte" width="48px" height="48" src="https://vectorwiki.com/images/TI19Y__svelte.svg" style="padding-right:10px;" />
+<img align="left" alt="express" width="70px" height="48" src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.png" style="padding-right:10px;" />
 <img align="left" alt="VisualStudioCode" width="48px"  height="48" src="https://img.icons8.com/color/48/visual-studio-code-2019.png" style="padding-right:10px;" />
 <img align="left" alt="Postman" width="48px" height="48" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" style="padding-right:10px;" />
 <img align="left" alt="Nodejs" width="48px" height="48" src="https://img.icons8.com/fluency/48/node-js.png" style="padding-right:10px;" />
 <img align="left" alt="Eslint" width="48px" height="48" src="https://img.icons8.com/color/48/eslint.png" style="padding-right:10px;" />
-<img align="left" alt="postgresql" width="48px" height="48" src="https://img.icons8.com/color/48/000000/mongodb.png" alt="postgreesql" style="padding-right:10px;"/>
-
+<img align="left" alt="mongodb" width="70px" height="48" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" style="padding-right:10px; "/>
+<img align="left" alt="netlify" width="48px" height="55" src="https://cdn.worldvectorlogo.com/logos/netlify.svg" style="padding-right:10px; "/>
+<img align="left" alt="versel" width="70px" height="48" src="https://logovtor.com/wp-content/uploads/2020/10/vercel-inc-logo-vector.png" style="padding-right:10px; "/>
