@@ -1,14 +1,4 @@
-![image.png]({../static/beranda.png})
-
-
-
-
-
-
-
-
-
-
+![image](../static/beranda.png)
 
 
 # create-svelte
