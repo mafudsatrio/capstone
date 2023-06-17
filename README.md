@@ -12,8 +12,7 @@
 
 <div align="center" text-align=" left" >
 
-
-  [Tracycle](https://tracycle.netlify.app/) 
+#### https://tracycle.netlify.app
   
 </div>
 
